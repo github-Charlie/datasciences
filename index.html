@@ -71,16 +71,6 @@ ul em{
   <a href="/myworld/index.html">ABOUT</a>|
   </div>
   
-  #!/usr/bin/perl
-# Additional HTTP Header
-print "Content-Type:application/octet-stream; name=\"FileName\"\r\n";
-print "Content-Disposition: attachment; filename=\"FileName\"\r\n\n";
-# Open the target file and list down its content as follows
-open( FILE, "<FileName" );
-while(read(FILE, $buffer, 100)){
-print("$buffer");
-}
-  
   <div id="content" align="left" bgcolor="white">
     <h5>Content Articles</h5>
     <p>Actual content goes here.....</p>
