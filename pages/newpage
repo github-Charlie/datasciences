@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+body{background:#FFF}
 <title>Acronym Example</title>
 </head>
-<body>
+<body >
 <p>This chapter covers marking up text in <acronym>XHTML</acronym>.</p>
 </body>
 </html>
