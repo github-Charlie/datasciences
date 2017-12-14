@@ -4,7 +4,11 @@
 <title>Machine Learning</title>
 <style>
 body {
+    border: 2px solid black;
+    padding: 25px;
     background-image: url("ImageFolder/mlp6.png");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 </style>
 </head>
