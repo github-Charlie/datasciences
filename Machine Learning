@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Machine Learning
+<title>Machine Learning</title>
 <style>
 body {
     background-image: url("ImageFolder/Deep-Neural-Network.jpg");
 }
 </style>
-</title>
 </head>
 
 <body>
