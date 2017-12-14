@@ -5,7 +5,7 @@
 <style>
 body {
     background-image: url("ImageFolder/mlp6.png");
-    background-size: auto;
+    background-size: 3000x2000px;
 }
 </style>
 </head>
