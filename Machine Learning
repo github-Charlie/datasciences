@@ -11,8 +11,8 @@ body {
 </head>
 
 <body>
-<img src="ImageFolder/Deep-Neural-Network.jpg" alt="HTML5 Icon" style="width:128px;height:128px;">
-<img src="ImageFolder/support vector machines (svms).jpg" alt="HTML5 Icon" width="128" height="128">
+img src="ImageFolder/Deep-Neural-Network.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"
+img src="ImageFolder/support vector machines (svms).jpg" alt="HTML5 Icon" width="128" height="128"
 
 </body>
 </html>
