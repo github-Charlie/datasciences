@@ -5,6 +5,6 @@
 <title>Acronym Example</title>
 </head>
 <body bg:color="green">
-<p>This chapter covers marking up text in <acronym>XHTML5</acronym>.</p>
+<h1>This chapter covers marking up text in <acronym>XHTML5</acronym>.</h1>
 </body>
 </html>
