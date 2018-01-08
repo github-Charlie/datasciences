@@ -8,11 +8,7 @@
 }
 #Header {
 	height:200px;
-	background:url(../ImageFolder/crplum4.jpg) no-repeat;
-}
-#header-img {
-  width: 100%;
-  height: auto;
+	background-image:url(../ImageFolder/crplum4.jpg) no-repeat;
 }
 #Menu {
 	height:60px;
