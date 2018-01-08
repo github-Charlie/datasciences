@@ -1,6 +1,6 @@
 #Container {
 	width:800px;
-	height:1000px;
+	height:auto;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:0px;
@@ -22,7 +22,7 @@
 }
 #MainBody {
 	width:650px;
-	height:400px;
+	height:1000px;
 	background-color:navy;
 	float:right;
 }
