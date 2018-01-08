@@ -7,9 +7,9 @@
 	margin-bottom:21px;
 }
 #Header {
-	width:800px;
+	width:100%;
 	height:200px;
-	background:url(../ImageFolder/crplum4.jpg) no-repeat top center;
+	background:url(../ImageFolder/crplum4.jpg) no-repeat;
 }
 #Menu {
 	height:60px;
