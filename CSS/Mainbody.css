@@ -16,13 +16,13 @@
 }
 #SideBar {
 	width:150px;
-	height:800px;
+	height:600px;
 	background-color:powderblue;
 	float:left;
 }
 #MainBody {
 	width:650px;
-	height:800px;
+	height:600px;
 	background-color:Beige;
 	float:right;
 }
