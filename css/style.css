@@ -74,9 +74,11 @@ header a:hover{
 /* showcase */
 #showcase {
 	min-height:400px;
-	background:url("../img/bigdata.jpg") repeat;
+	background-image:url("../img/bigdata.jpg");
+	background-repeat:no-repeat;
+    	background-size: 100% 100%;
 	text-align:center;
-	color:#ffffff;
+	color:#00FF00;
 }
 
 #showcase h1{
