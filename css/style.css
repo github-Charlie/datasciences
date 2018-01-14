@@ -7,7 +7,7 @@ body{
 
 /*Global */
 .container{
-	width:80%
+	width:80%;
 	margin:auto;
 	overflow:hidden;
 }
@@ -76,7 +76,7 @@ header a:hover{
 	min-height:400px;
 	background-image:url("../img/bigdata.jpg");
 	background-repeat:no-repeat;
-    	background-size: 100% 100%;
+    background-size: 100% 100%;
 	text-align:center;
 	color:#00FF00;
 }
@@ -90,7 +90,7 @@ header a:hover{
 #showcase p{
 	font-size:20px;
 }
-
+/* newsletter */
 #newsletter{
 	padding:15px;
 	color:#ffffff;
@@ -111,7 +111,6 @@ header a:hover{
 	height:25px;
 	width:250px;
 }
-
 
 /* Boxes */
 #boxes{
