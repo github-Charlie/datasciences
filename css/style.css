@@ -26,6 +26,14 @@ ul {
 	color:#ffffff;
 }
 
+.dark{
+	padding:15px;
+	background:#35424a;
+	color:#ffffff;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
 /* Header */
 header{
 	background:#35424a;
@@ -73,7 +81,7 @@ header a:hover{
 
 /* showcase */
 #showcase {
-	min-height:400px;
+	min-height:500px;
 	background-image:url("../img/bigdata.jpg");
 	background-repeat:no-repeat;
     background-size: 100% 100%;
@@ -87,8 +95,9 @@ header a:hover{
 	margin-bottom:10px;
 }
 
-#showcase p{
+#showcase h2{
 	font-size:20px;
+	color:#00FF00;
 }
 /* newsletter */
 #newsletter{
@@ -124,6 +133,19 @@ header a:hover{
 }
 #boxes .box img{
 	width:100px;
+}
+
+/* Sidebar */
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+/* Main-col*/
+article#main-col{
+	float:left;
+	width:65%;
 }
 
 footer {
