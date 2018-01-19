@@ -170,6 +170,7 @@ footer {
 		text-align:center;
 		width:100%;
 	}
+	
 	header{
 		padding-bottom:10px;
 	}
@@ -183,7 +184,7 @@ footer {
 		width:100%;
 	}
 	
-	#newsletter form input, aside#sidebar form input, aside#sidebar textarea,[type="email"]{
+	#newsletter form input[type="email"], aside#sidebar form input, aside#sidebar textarea {
 		width:100%;
 		margin-bottom:5px;
 	}
