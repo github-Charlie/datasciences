@@ -38,8 +38,8 @@ ul {
 header{
 	background:#181256;
 	color:#ffffff;
-	padding-top:20px;
-	min-height:50px;
+	padding-top:30px;
+	min-height:60px;
 	border-bottom:#308866 5px solid;
 }
 
@@ -84,7 +84,7 @@ header a:hover{
 	min-height:300px;
 	background-image:url("../img/codep2.jpg");
 	background-repeat:no-repeat;
-    	background-size: 100% 100%;
+    background-size: 100% 100%;
 	text-align:center;
 	color:#00FF00;
 }
