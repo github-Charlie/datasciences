@@ -70,7 +70,7 @@ header nav {
 }
 
 header .highlight, header .current a{
-	color: #e8491d;
+	color: #00FF00;
 	font-weight:bold;
 }
 
@@ -152,7 +152,7 @@ footer {
 	padding:20px;
 	margin-top:20px;
 	color:#ffffff;
-	background-color:#e8491d;
+	background-color:#308866;
 	text-align:center;
 }
 
