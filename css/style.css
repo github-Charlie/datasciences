@@ -124,6 +124,7 @@ header a:hover{
 /* Boxes */
 #boxes{
 	margin-top:20px;
+	height:400px;
 }
 #boxes .box{
 	float:left;
