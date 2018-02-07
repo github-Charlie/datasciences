@@ -12,6 +12,10 @@ body{
 	overflow:hidden;
 }
 
+.line{
+	width:80%
+}
+
 ul {
 	margin:0;
 	padding:0;
@@ -154,6 +158,12 @@ aside#sidebar textarea{
 article#main-col{
 	float:left;
 	width:65%;
+}
+
+hr {
+height: 5px;
+background-color: #308866;
+border: none;
 }
 
 footer {
