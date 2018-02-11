@@ -29,16 +29,6 @@
 				</nav>
 			</div>
 		</header>
- 
-		<section id="newsletter">
-			<div class="container">
-				<h1>Subscribe To Our Newsletter</h1>
-				<form>
-					<input type="email" placeholder="Enter Email....">
-					<button type="submit" class="button_1">Subscribe</button>
-				</form>
-			</div>
-		</section>
 		
 		<section id="main">
 			<div class="container">
@@ -47,12 +37,24 @@
 					<p>
 					Please feel free to send message and contact information.
 					</p>
+					<p>
+						<form action="mailto:chhe09@gmail.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name"><br>
+						E-mail:<br>
+						<input type="text" name="mail"><br>
+						Comment:<br>
+						<input type="text" name="comment" size="50"><br><br>
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
+						</form>
+					</p>				
 				</article>
 				
 				<aside id="sidebar">
 					<div class="dark">
 						<h3>To leave a message</h3>
-						<form action="mailto:chhe09@gmail.com" method="post" enctype="text/plain">
+						<form action="mailto:chhe09@gmail.com" method="GET">
 						<div>
 							<label>Name</label><br>
 							<input type="text" placeholder="Name">
