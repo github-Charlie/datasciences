@@ -30,9 +30,9 @@ ul {
 	color:#ffffff;
 }
 
-.dark{
+.purple{
 	padding:15px;
-	background:#35424a;
+	background:#9370DB;
 	color:#ffffff;
 	margin-top:10px;
 	margin-bottom:10px;
@@ -88,7 +88,7 @@ header a:hover{
 	min-height:400px;
 	background-image:url("../img/codep2.jpg");
 	background-repeat:no-repeat;
-    	background-size: 100% 100%;
+    background-size: 100% 100%;
 	text-align:center;
 	color:#00FF00;
 	border-bottom:#308866 5px solid;
