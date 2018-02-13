@@ -38,6 +38,14 @@ ul {
 	margin-bottom:10px;
 }
 
+.navy{
+	padding:15px;
+	background:#181256;
+	color:#ffffff;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
 /* Header */
 header{
 	background:#181256;
