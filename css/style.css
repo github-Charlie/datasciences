@@ -125,14 +125,14 @@ header a:hover{
 	float:left;
 	text-align:center;
 	width:28%;
-	height:300px;
-	padding:10px;
-	border:2px solid #181256;
+	height:280px;
+	padding:5px;
+	border:10px solid #B0E0E6;
 	background-color:#FFFFFF;
 }
 #boxes .box img{
-	width:300px;
-	height: 200px;
+	width:170px;
+	height: 150px;
 }
 
 /* Sidebar */
@@ -183,7 +183,7 @@ footer {
 	aside#sidebar{
 		float:none;
 		text-align:center;
-		width:100%;
+		width:auto;
 	}
 	
 	header{
