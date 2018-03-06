@@ -11,7 +11,8 @@
 		<title>Data Sciences|JavaScript</title>
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/mlp7.jpg" />
- </head>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+ </head> 
  <body>
 		<header>
 			<div class="container">
@@ -63,20 +64,71 @@
 			
 			<div class="container">
 				<article id="main-col">
-					<h1 class="page-title">JavaScript</h1>
-					<h3>D3.js</h3>
-					<p>
-					D3.js, or Data Driven Documents, is an open source, data visualization library of JavaScript that can manipulate data-based HTML documents by mapping the data to the documents. However, it functions much more than just visualization of data.
-					</p>
-
+					<h1>Data visualization using D3.js - crop variety trial </h1>
+					<h2>High yielding cultivars</h2>
+					<ul class="items">
+						<li>CV1-HR to disease</li>
+						<li>CV2-HR to disease</li>
+						<li>CV3-HR to disease</li>
+						<li>CV4-HR to disease</li>
+						<li>CV5-MR to disease</li>
+						<li>CV6-MR to disease</li>
+					</ul>
+					<br><br><br>
+					
+					<script>
+						var styles = [
+							{
+								'background':'#006400',
+								'color':'white',
+								'width':'60'
+							},
+							{
+								'background':'#006400',
+								'color':'white',
+								'width':'70'
+							},
+							{
+								'background':'#006400',
+								'color':'white',
+								'width':'59'
+							},
+							{
+								'background':'#006400',
+								'color':'white',
+								'width':'53'
+							},
+							{
+								'background':'#32CD32',
+								'color':'blue',
+								'width':'63'
+							},
+							{
+								'background':'#32CD32',
+								'color':'blue',
+								'width':'50'
+							}
+						];
+						
+						d3.selectAll('.items li')
+							.data(styles)
+							.style({
+								'font-size':'18px',
+								'padding':'6px',
+								'margin':'4px',
+								'list-style':'none',
+								'background': function(d){
+									return d.background;
+								},
+								'color': function(d){
+									return d.color;
+								},
+								'width': function(d){
+									return d.width+'%';
+								},
+							});
+					</script>
 				</article>
-				
-				<aside id="sidebar">
-					<div class="navy">
-						<h3>what we do</h3>
-						<p>D3.js, or Data Driven Documents, is an open source, data visualization library of JavaScript that can manipulate data-based HTML documents by mapping the data to the documents. However, it functions much more than just visualization of data.
-					</div>
-				</aside>
 			</div>
 		</section>
 		
