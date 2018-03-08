@@ -124,14 +124,14 @@ header a:hover{
 #boxes .box{
 	float:left;
 	text-align:center;
-	width:28%;
+	width:30%;
 	height:280px;
 	padding:5px;
 	border:10px solid #B0E0E6;
 	background-color:#FFFFFF;
 }
 #boxes .box img{
-	width:170px;
+	width:230px;
 	height: 150px;
 }
 
