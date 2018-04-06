@@ -107,6 +107,7 @@ header a:hover{
 	margin-top:60px;
 	font-size:65px;
 	margin-bottom:10px;
+	color:#00FF00;
 }
 
 #showcase h2{
@@ -133,6 +134,13 @@ header a:hover{
 #boxes .box img{
 	width:230px;
 	height: 150px;
+}
+
+h1 {
+    text-align:center;
+    font-size: 30px;
+    color: #0000ff;
+    margin-top: 0.67em;
 }
 
 /* Sidebar */
