@@ -105,7 +105,7 @@ header a:hover{
 
 #showcase h1{
 	margin-top:60px;
-	font-size:55px;
+	font-size:65px;
 	margin-bottom:10px;
 }
 
@@ -159,6 +159,10 @@ hr {
 height: 5px;
 background-color: #308866;
 border: none;
+}
+
+pre{
+	background-color: #b0e0e6; 
 }
 
 footer {
