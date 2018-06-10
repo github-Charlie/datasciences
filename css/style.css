@@ -47,6 +47,10 @@ ul {
 	margin-bottom:10px;
 }
 
+.small{
+	font-size: smaller;
+}
+
 /* Header */
 header{
 	background:#181256;
