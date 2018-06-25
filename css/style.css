@@ -134,9 +134,9 @@ header a:hover{
 	background-color:#FFFFFF;
 }
 
-/* img size: w-230px=>78%, h-150px=>60% */
+/* img size: w-230px=>75%, h-150px=>60% */
 #boxes .box img{
-	width: 78%;
+	width: 75%;
 	height: 60%;
 }
 
