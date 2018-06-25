@@ -125,11 +125,10 @@ header a:hover{
 	height:auto;
 }
 
-/* w-30%=>28% */
 #boxes .box{
 	float:left;
 	text-align:center;
-	width:28%;
+	width:30%;
 	height:280px;
 	padding:5px;
 	border:10px solid #B0E0E6;
