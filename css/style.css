@@ -135,9 +135,10 @@ header a:hover{
 }
 
 /* img size: w-230px=>75%, h-150px=>60% */
+/* img size: w-230px=>240px, h-150px=>160px */
 #boxes .box img{
-	width: 230px;
-	height: 150px;
+	width: 240px;
+	height: 160px;
 }
 
 h1 {
