@@ -169,10 +169,14 @@
 						<br>
 						<img src="https://latex.codecogs.com/gif.latex?I=arg\underset{S}{}min{\sum_{i=1}^{k}}\sum_{x\in&space;S_{i}}\left&space;\|x-\mu&space;_{i}&space;\right&space;\|^{2}" title="i=arg\underset{S}{}min{\sum_{i=1}^{k}}\sum_{x\in S_{i}}\left \|x-\mu _{i} \right \|^{2}" /><br>
 						where, <img src="https://latex.codecogs.com/gif.latex?\mu&space;_{i}" title="\mu _{i}" /> is the mean of all points in the <img src="https://latex.codecogs.com/gif.latex?i^{th}" title="i^{th}" /> cluster <img src="https://latex.codecogs.com/gif.latex?S_{i}" title="S_{i}" /> <img src="https://latex.codecogs.com/gif.latex?(i=1,&space;2,&space;...,&space;k)" title="(i=1, 2, ..., k)" />. 
-						</li>
+						</li><br>
+						<li><b>Support vector machine:</b> Support vector machines (SVMs) are supervised machine learning models which are similar to linear or logistic regression except that they have different margin-based loss functions. They are binary classification algorithms that can analyze data for classification and regression analysis.
+						</li><br>
+						<li><b>Random forest:</b> Random Forest is to select randomly from the original data and then form into different subsets. It is an advanced decision tree which is highly complex and each tree of the random forest works through the model of a decision tree algorithm.
+						</li>	
 					</ul><br>
 					</p>	
-	 
+
 					<h1 class="page-title">Deep Learning</h1>
 					<h3>What is deep learning?</h3>
 					<p>Deep learning is a subfield of machine learning using artificial or deep neural networks to train the computer to perform human-like tasks such as image and speech recognition. Deep learning is currently at the cutting edge of machine learning (ML) and artificial intelligence (AI) which has led to the breakthroughs such as audio processing, computer vision as well as self-driving cars, etc.
@@ -225,8 +229,25 @@
 					</ul>
 
 					<h3>Apache Spark</h3>
-					<p>Spark was initially a project created in 2012 by the AMPLab (Algorithms, Machines and People Lab) at UC Berkeley. As a top-level Apache project, it processes datasets in parallel across a cluster of hardware. Spark differs from Hadoop in that Hadoop reads and writes files into HDFS while Spark processes data in RAM using an RDD (Resilient Distributed Dataset).
+					<p>Apache Spark is a general-purpose cluster computing system or platform with high-level tools for structured data processing, machine learning, graphics processing and streaming. It was initially a project created in 2012 by the AMPLab (Algorithms, Machines and People Lab) at UC Berkeley. As a top-level Apache project, it processes datasets in parallel across a cluster of hardware. Spark differs from Hadoop in that Hadoop reads and writes files into HDFS while Spark processes data in RAM using an RDD (Resilient Distributed Dataset).
 					</p>
+<<<<<<< HEAD
+=======
+					<p>The essential components of Apache Spark include:
+					</p>
+					<ul>
+						<li><b>Spark Core:</b> Spark Core is the foundation of the project that contains the basic components to provide distributed task dispatching, scheduling, memory management, fault recovery, interacting with storage systems, and basic I/O functionalities. Spark Core has the API called resilient distributed datasets (RDDs) as the main programming abstraction representing all the items distributed across different compute nodes which can be manipulated in parallel for processing huge dataset.  It is the capability of <em>in-memory computation</em> that generates high speed for Apache Spark compared with Apache Hadoop.   
+						</li>
+						<li><b>Spark SQL:</b> Spark SQL is a Spark module or the component on top of Spark Core that introduces a data abstraction named DataFrames for structured and semi-structured data that can be queried using SQL or the Hive Query Language (HQL), an SQL variant, with support for different data sources such as Hive tables, JSON and Parquet. Spark SQL provides a domain-specific language (DSL) to manipulate DataFrames in Scala, Python and Java, as well as the SQL language support with command-line interfaces and the Open Database Connectivity (ODBC) /Java Database Connectivity (JDBC) server.
+						</li>
+						<li><b>Spark Streaming:</b> Spark Streaming is able to perform streaming analytics through Spark Core's fast scheduling capability.  It is the component for real time processing of live streams of data such as social media, the log files from production web server, and queues of messages from web users.  After receiving input data streams, Spark Streaming divides them into batches for processing by the Spark engine and then generating final stream of results in batches.
+						</li>
+						<li><b>Spark MLlib:</b> Spark MLlib is a distributed machine-learning library or framework on top of Spark Core that provides multiple types of machine learning algorithms, which are designed to scale out across a cluster, with classification, regression, clustering, collaborative filtering, and so as well as supporting functionality such as model evaluation and data import. . Some of the algorithms work with streaming data including linear regression using ordinary least squares or k-means clustering.  
+						</li>
+						<li><b>GraphX:</b> GraphX is an API and a distributed graph-processing framework or library on top of Apache Spark for manipulating graphs and performing graph-parallel operations. Like Spark SQL and Spark Streaming, GraphX is based on the Spark RDD API and functions as an engine for network graph analytics with data store, which has the capability of <em>clustering, classification, traversal, searching</em>, and <em>pathfinding</em> in graphs. It can optimize the formation of vertices and edges with arbitrary properties for the primitive data types and has various operators for manipulating graphs, such as subgraph and mapVertices, and a library of common graph algorithms including PageRank and triangle counting, etc.
+						</li>
+					</ul>
+>>>>>>> d4dfe82fdadd99b8a5648e9cd767c109f04f8fb9
 
 					<hr>
 					<br><br>
@@ -240,30 +261,37 @@
 						<h3>What we do</h3>
 						<p>This is somewhat an introduction on <em>big data</em> basics and the analytics. The increasing amount of genome sequencing data from various biological species can be a type of big data in terms of computational genomics and data analysis. It is aimed at wet-lab researchers who want to understand big data concept and the analyses and bioinformaticians who are new to <em>big data</em> and want to learn it.</p>
 					</div> 
-					<br><br><br><br><br><br>
+					<br style ="line-height:26;"><br>
 					<div class="purple">
 						<a href="bimg/bimg3_ds.jpg" style="text-decoration:none;">
 						<img src="bimg/bimg3_ds.jpg" alt="ds" height="300%" width="100%">
 						<br>
-						<center> <font color="#ffffff")>Data sciences are essential for business<br>(<em>Vincent Granville. 2017. Datasciencecentral.com</em>) </font></center>
+						<center> <font color="#ffffff")>Data sciences are essential for business<br>(Courtesy: <em>Vincent Granville. 2017. Datasciencecentral.com; </br>Rubens Zimbres. 2016. Linkedin.com</em>) </font></center>
 						</a>
 					</div>
-					<br><br><br><br><br><br>
+					<br style ="line-height:8;">
 					<div class="purple">
 						<a href="bimg/bimg4_ml.jpg" style="text-decoration:none;">
 						<img src="bimg/bimg4_ml.jpg" alt="ml" height="300%" width="100%">
 						<br>
-						<center> <font color="#ffffff")>Machine learning and its applications<br>(Adapted with minor changes from: <em>William Vorhies. 2017. Datasciencecentral.com</em>) </font></center>
+						<center> <font color="#ffffff")>Machine learning and its applications<br>(Courtesy: Figure is adapted with minor changes from: <em>William Vorhies. 2017. Datasciencecentral.com</em>) </font></center>
 						</a>
 					</div>
-					
+					<br style ="line-height:8;">
+					<div class="purple">
+						<a href="bimg/bimg5_DS&BI.jpg" style="text-decoration:none;">
+						<img src="bimg/bimg5_DS&BI.jpg" alt="ds" height="300%" width="100%">
+						<br>
+						<center> <font color="#ffffff")>From data sciences to business intelligence<br>(Courtesy: <em>Rubens Zimbres. 2016. Linkedin.com</em>) </font></center>
+						</a>
+					</div>
 				</aside>
 			</div>
 		</section>
 		<br>
 		
 		<footer>
-			<p>Data Sciences, Copyright &copy; 2018 
+			<p>Data Sciences, Copyright &copy; 2018, 
 			<a href="https://twitter.com/ChunlinHe" target="_blank"><img src="img/tweet_icon.png" width="31" height="31" alt="" /></a>
 			<a href="https://www.linkedin.com/in/chunlinhe888" target="_blank"><img src="img/in_icon.png" width="31" height="31" alt="" /></a>
 			</p>			
