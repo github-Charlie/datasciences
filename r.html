@@ -112,7 +112,7 @@
 					<br>
 					<h1>R Applications</h1>
 					<br>
-					<h3 id="rna-seq">RNA-seq data analysis</h3>
+					<h3 id="rna-seq1">RNA-seq data analysis</h3>
 					<p>Since the availability of the next-generation sequencing (NGS) technology, RNA-seq has become popular in biological research in many species for gene discovery, annotation and expression analysis along with the identification of SNP markers across a genome. Compared with the previous DNA microarray technology, it can provide a comprehensive overview of transcriptome with some of the great advantages including higher sensitivity, higher resolution at nucleotide level and no prerequisite of gene sequences.  The advances in high-throughput sequencing with decreasing cost have made it affordable to rapidly generate a large quantity of DNA sequences and genotypic data for investigating a wide range of biological and medical problems.     In the meantime, massive and complex sequence datasets generated from the sequencers create a need for the development of statistical and bio-computational applications to tackle the analysis and data management.
 					</p>
 					<p>Here is a hypothetical example of RNA-Seq dataset from the drought experiment with hybrid maize, i.e. drought stress vs optimal water supply. Samples were sequenced with short reads being mapped onto the maize reference genome and the number of reads mapped to the features of interest (genic regions) were obtained. The gene expression profile for a particular sample consists of the set of gene-wise counts of sequence reads from that sample and one of the experimental objectives is to identify the differentially expressed genes.</p>
@@ -128,7 +128,7 @@
 					<p>The data set should be performed with additional manipulations to filter and exclude the genes with non-differential expression. A simple scatter plot can be generated using the script below prior to the differential gene expression analysis. 
 					<script src="https://gist.github.com/github-Charlie/473c612b6e7826ed3743b94cd0ad863a.js"></script>		
 					</p><br>
-					<p>Then, an MA plot for differential expression analysis can be created to visualize the differences between measurements obtained from two samples or treatments based on the log-intensity ratio (<em>M</em>) and the average log-expression (<em>A</em>).
+					<p id="rna-seq2">Then, an MA plot for differential expression analysis can be created to visualize the differences between measurements obtained from two samples or treatments based on the log-intensity ratio (<em>M</em>) and the average log-expression (<em>A</em>).
 					</p>
 					<img src="https://latex.codecogs.com/gif.latex?M&space;=&space;S_{2}&space;-&space;S_{1}" title="M = S_{2} - S_{1}" /> <br>
 					<img src="https://latex.codecogs.com/gif.latex?A&space;=&space;\frac{S_{1}&space;&plus;&space;S_{2}}{2}" title="A = \frac{S_{1} + S_{2}}{2}" /> <br>
