@@ -126,7 +126,9 @@
 					</p>
 					<p id="rnaMAplot">The data set should be performed with additional manipulations to filter and exclude the genes with non-differential expression. A simple scatter plot can be generated using the script below prior to the differential gene expression analysis. 
 					<script src="https://gist.github.com/github-Charlie/473c612b6e7826ed3743b94cd0ad863a.js"></script>		
-					</p><br>
+					</p>
+
+					<br>
 					<p>Then, an MA plot for differential expression analysis can be created to visualize the differences between measurements obtained from two samples or treatments based on the log-intensity ratio (<em>M</em>) and the average log-expression (<em>A</em>).
 					</p>
 					<img src="https://latex.codecogs.com/gif.latex?M&space;=&space;S_{2}&space;-&space;S_{1}" title="M = S_{2} - S_{1}" /> <br>
@@ -134,10 +136,13 @@
 					where, <img src="https://latex.codecogs.com/gif.latex?S_{1}" title="S_{1}" /> and <img src="https://latex.codecogs.com/gif.latex?S_{2}" title="S_{2}" /> are the expression data for sample <em>1</em> and <em>2</em>, respectively.
 					<br><br>
 					<script src="https://gist.github.com/github-Charlie/3c4c5fc3cb42c60c60bc8134ec965555.js"></script>
+					
+					<br>
 					<p>
 					The transformed dataset can be normalized using the following approach:
 					</p>
 					<img src="https://latex.codecogs.com/gif.latex?x_{i}^{'}&space;=&space;\frac{x_{i}-min(x)}{max(x)-min(x)}" title="x_{i}^{'} = \frac{x_{i}-min(x)}{max(x)-min(x)}" />
+					where, <img src="https://latex.codecogs.com/gif.latex?x_{i}" title="x_{i}" /> and <img src="https://latex.codecogs.com/gif.latex?x_{i}^{'}" title="x_{i}^{'}" /> are the data before and after normalization, respectively. 
 
 				</article>
 				
