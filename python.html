@@ -139,7 +139,7 @@
 					<h3 id="rna-seq">Visualization of gene expression data</h3>
 					<p>To follow the RNA-seq data analysis using <a href="r.html#rnacim">R</a> based on the hypothetical example from maize gene expression, a scatter plot matrix is created for the selected sample-treatment combinations using Python, where the diagonal displays the plots of the probability density function through kernel density estimation (KDE). </p>
 					<pre>
-					<code>
+						<code>
 						import pandas as pd
 						data=pd.read_csv("transmydata.csv")
 						import numpy as np
@@ -148,7 +148,7 @@
 						df = pd.DataFrame(data, columns = ['CAW', 'CBW', 'CAD', 'CBD'])
 						scatter_matrix(df, diagonal = ‘kde’, alpha = 0.6, figsize = (5, 5), c=df['CAD'])
 						plt.show()
-					</code>
+						</code>
 					</pre>
 				</article>
 				
