@@ -200,7 +200,7 @@ footer {
 	article#main-col,
 	aside#sidebar{
 		float:none;
-		text-align:center;
+		text-align:left;
 		width:auto;
 	}
 	
