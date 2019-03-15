@@ -198,6 +198,7 @@ footer {
 	#newsletter form,
 	#boxes .box,
 	article#main-col,
+	article#coding,
 	aside#sidebar{
 		float:none;
 		text-align:left;
