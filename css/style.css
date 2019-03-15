@@ -186,7 +186,8 @@ border: none;
 pre{
 	background-color: #b0e0e6; 
 	position: relative;
-	padding-bottom: 28%; /* set the aspect ratio here as (height / width) * 100% */
+	padding-bottom: 30%; /* the aspect ratio is (height / width) * 100% */
+	padding-top: 0; 
 	height: 0;
 	overflow: hidden;
 	max-width: 100%;
