@@ -177,12 +177,6 @@ border: none;
 
 pre{
 	background-color: #FFFFFF; 
-	align-self: left;
-	padding-bottom: 30%; /* the aspect ratio is (height / width) * 100% */
-	padding-top: 0; 
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
 }
 
 footer {
@@ -200,7 +194,6 @@ footer {
 	header nav,
 	header nav li,
 	footer,
-	pre,
 	#newsletter h1,
 	#newsletter form,
 	#boxes .box,
