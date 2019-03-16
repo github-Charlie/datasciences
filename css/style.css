@@ -184,9 +184,9 @@ pre {
 	font-size: 12px;
 	line-height: 20px;
 	background: #efefef;
-	border: 1px solid #777;
 	background: url(lines.png) repeat 0 0;
 }
+
 pre code {
 	padding: 10px;
 	color: #333;
