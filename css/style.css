@@ -183,14 +183,14 @@ pre {
 	overflow-y: hidden;
 	font-size: 12px;
 	line-height: 20px;
-	background: #e0ffff;
+	background: #F0FFF0;
 	border: 1px; 
 	background: url(lines.png) repeat 0 0;
 }
 
 pre code {
 	padding: 10px;
-	color: #F0FFF0;
+	color: #333;
 }
 
 footer {
