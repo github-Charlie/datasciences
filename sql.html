@@ -127,7 +127,15 @@
 					<img src="simg/simg2_genelist.jpg" alt="genelist" align="middle" width="100%">
 					</p>
 					<p>This table can be easily accessed/queried using SQL statements such as "SELECT * FROM genelist, WHERE condition(id=...)", etc.:
-					<script src="https://gist.github.com/github-Charlie/dcdb9078a16e1f7fc32da9deea92dc84.js"></script>
+					<pre><code>
+					SELECT
+					    *
+					FROM
+					    genelist
+					WHERE
+					    geneName like '%8g%';   -- select all the genes on linkage group 8
+					    trait like '%disease%'  -- select all the disease resistance genes
+					</code></pre>
 					<p>Or, it can be updated using the following SQL statements such as:
 						<ul>
 							<li>UPDATE genelist, SET column1=..., column2=..., WHERE id=...;</li>
