@@ -282,12 +282,12 @@
 					<h3 id="corrmatrix">Graphical display of a correlation matrix of soybean traits</h1>
 					<pre><code>
 					library(tidyverse)
-library(data.table)
-library(corrplot)
-soydata<- read.csv("sdata.csv")
-trtdata <- select(soydata, yield, disRes, height, lodging, seedwt, protein, oil, sumpo)
-matrix <- cor(trtdata);
-corrplot(matrix, method="color", type="upper")
+					library(data.table)
+					library(corrplot)
+					soydata<- read.csv("sdata.csv")
+					trtdata <- select(soydata, yield, disRes, height, lodging, seedwt, protein, oil, sumpo)
+					matrix <- cor(trtdata);
+					corrplot(matrix, method="color", type="upper")
 					</code></pre>
 				</article>
 				
@@ -307,7 +307,22 @@ corrplot(matrix, method="color", type="upper")
 			<div class="container">
 				<article id="main-col">
 					<h3 id="rregression">Creating regression charts between crop traits</h1>
-					<p><script src="https://gist.github.com/github-Charlie/7bec7f9458196c399a42d7c89b71b590.js"></script></p>
+					<pre><code>
+					library(ggplot2)
+library(gridExtra)
+c1a <- ggplot(soydata, aes(x = disRes, y = yield)) +
+			geom_point(aes(size=3, color="red") + geom_smooth(method = "lm", se = TRUE))
+c1b <- c1a + theme(axis.title.x = element_text(face="bold", size=12)) + labs(x="Disease 
+			Rating") + theme(axis.title.y = element_text(face="bold", size=12)) + labs(y="Yield") + theme(plot.title = element_text(face="bold", size=12)) + labs(title="Yield Response to Root Disease") + theme(panel.grid.major = element_blank(), panel.border = element_blank(), panel.background = element_blank(), axis.line = element_line(size=.4))
+m1 <- lm(soydata$yield ~ soydata$disRes)
+a1 <- signif(coef(m1)[1], digits = 2)
+b1 <- signif(coef(m1)[2], digits = 2)
+regeq1 <- paste("y = ",b1,"x + ",a1, sep="")
+regression1 <- c1b + geom_text(aes(x = 6, y = 360, label = regeq1), color="black", size=5, 
+	parse = FALSE)
+grid.arrange(r1, r2, nrow=1)
+
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
