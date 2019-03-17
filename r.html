@@ -158,7 +158,12 @@
 					<br>
 					To generate a heatmap for clustering gene expression leveles across samples and treatments:
 					<br>
-					<script src="https://gist.github.com/github-Charlie/74dc096a89233c148eee2535c72a8412.js"></script>
+					<pre><code>
+					library(stats)
+library(gplots)
+heatmap.2(as.matrix(mydata), col=redgreen(95), scale="row", key=T, keysize=1.5,density.info="none", 
+      trace="none", cexCol=0.9, labRow=NA)
+					</code></pre>
 
 					<br>
 					<p>
