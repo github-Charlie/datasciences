@@ -163,7 +163,40 @@
 				<article id="main-col">
 					<h3 id="genomediagram">Genome diagrams</h3>
 					<p>Visualization of syntenic regions across different species/subspecies or different strains of the same species using genome diagrams:</p>
-					<p><script src="https://gist.github.com/github-Charlie/648c185a531dd61e6e85470b3e06a253.js"></script>
+					<pre><code>
+					from Bio import SeqIO
+Seq1_data = SeqIO.read("seq_species1.gb", "gb")
+Seq2_data = SeqIO.read("seq_species2.gb", "gb")
+from Bio.Graphics import GenomeDiagram
+from reportlab.lib.colors import *
+Seq1_colors = [green]*5 + [blue]*7 + [orange]*2 + [grey]*2 + [red] + [lightblue]*11 + [green]*4 \
+         + [grey] + [green]*2 + [grey, green] + [brown]*5 + [blue]*4 + [purple]*5 \
+         + [grey, lightblue] + [navy]*2 + [grey]
+Seq2_colors = [green]*6 + [blue]*8 + [orange]*2 + [grey] + [red] + [lightblue]*21 + [green]*5 \
+         + [grey] + [brown]*4 + [blue]*3 + [purple]*3 + [grey]*5 + [navy]*2
+name = "SyntenyView_linear"
+gd_diagram = GenomeDiagram.Diagram(name) #to create genome diagrams
+max_len = 0
+for record, gene_colors in zip([Seq1_data, Seq2_data], [Seq1_colors, Seq2_colors]):
+    max_len = max(max_len, len(record))
+    gd_track_for_features = gd_diagram.new_track(1, start=0, end=len(record))
+    #can include (name="name of species/subspecies") to label the track.
+    gd_feature_set = gd_track_for_features.new_set()
+    i = 0
+    for feature in record.features:
+        if feature.type != "gene":
+            #Exclude current feature
+            continue
+        gd_feature_set.add_feature(feature, sigil="ARROW",
+                                   color=gene_colors[i], label=True,
+                                   name = str(i+1),
+                                   label_position="start",
+                                   label_size = 9, label_angle=90, label_color=green)
+        i+=1
+gd_diagram.draw(format="linear", pagesize='A2', fragments=1, start=0, end=max_len)
+    #or use format="circular" to create a circular graph.
+gd_diagram.write(name + ".pdf", "PDF")
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
