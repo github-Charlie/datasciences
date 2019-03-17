@@ -220,16 +220,17 @@
 					<h3>Generate a list of random primer sequences with GC content for <em>in silico</em> PCR</h3>
  					<pre><code>
  					import random
-from Bio.SeqUtils import GC
-for i in range(18):
-        def random_dna_seq_f(length):
-             return ''.join(random.choice('ACTG') for _ in range(length));
-        seq_f=random_dna_seq_f(20)
-        def random_dna_seq_r(length):
-             return ''.join(random.choice('ACTG') for _ in range(length));
-        seq_r=random_dna_seq_r(20)
-        print("Marker"+"{:3d}".format(i+1), ":", "F-primer:", seq_f, "GC%=",GC(seq_f), " ", "R-primer:", seq_r, "GC%=", GC(seq_r));
+					from Bio.SeqUtils import GC
+					for i in range(18):
+					        def random_dna_seq_f(length):
+					             return ''.join(random.choice('ACTG') for _ in range(length));
+					        seq_f=random_dna_seq_f(20)
+					        def random_dna_seq_r(length):
+					             return ''.join(random.choice('ACTG') for _ in range(length));
+					        seq_r=random_dna_seq_r(20)
+					        print("Marker"+"{:3d}".format(i+1), ":", "F-primer:", seq_f, "GC%=",GC(seq_f), " ", "R-primer:", seq_r, "GC%=", GC(seq_r));
  					</code></pre>
+ 					<br>
 					<img src="pimg/pimg6_primers.jpg" alt="p-primer" height="300%" width="100%">
 				</article>
 			</div>
