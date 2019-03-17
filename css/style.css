@@ -183,7 +183,7 @@ pre {
 	overflow-y: hidden;
 	font-size: 12px;
 	line-height: 20px;
-	background: #F0FFF0;
+	background: #FFFFFF;
 	border: 1px; 
 	text-align: left;
     white-space: pre-line;
@@ -191,7 +191,7 @@ pre {
 
 pre code {
 	padding: 10px;
-	color: #FFFFFF;
+	color: #333;
 }
 
 footer {
