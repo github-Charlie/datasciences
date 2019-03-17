@@ -218,7 +218,18 @@
 			<div class="container">
 				<article id="main-col">
 					<h3>Generate a list of random primer sequences with GC content for <em>in silico</em> PCR</h3>
-					<p><script src="https://gist.github.com/github-Charlie/fc3dd07bf333941065a48798d3c1d8c4.js"></script></p>
+ 					<pre><code>
+ 					import random
+from Bio.SeqUtils import GC
+for i in range(18):
+        def random_dna_seq_f(length):
+             return ''.join(random.choice('ACTG') for _ in range(length));
+        seq_f=random_dna_seq_f(20)
+        def random_dna_seq_r(length):
+             return ''.join(random.choice('ACTG') for _ in range(length));
+        seq_r=random_dna_seq_r(20)
+        print("Marker"+"{:3d}".format(i+1), ":", "F-primer:", seq_f, "GC%=",GC(seq_f), " ", "R-primer:", seq_r, "GC%=", GC(seq_r));
+ 					</code></pre>
 					<img src="pimg/pimg6_primers.jpg" alt="p-primer" height="300%" width="100%">
 				</article>
 			</div>
