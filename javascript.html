@@ -110,7 +110,37 @@
 				<article id="main-col">	
 					<h1>JavaScript Applications</h1>
 					<h2 id="dvd3js">Data visualization using D3.js - high yielding cultivars from crop variety trial </h2>
-					<p><script src="https://gist.github.com/github-Charlie/5a0975745c7429c1aa18531c575ddb0f.js"></script></p>
+					<pre><code>
+					//<h1>...</h1>
+//<ul class="items">...</ul>		
+<script>
+	var styles = [
+	{
+		'background':'#006400',
+		'color':'#FFFFFF',
+		'width':'60'
+	},
+	...//for the list
+	];			
+d3.selectAll('.items li')
+	.data(styles)
+	.style({
+	'font-size':'14px',
+	'padding':'8px',
+	'margin':'2px',
+	'list-style':'none',
+	'background': function(d){
+		return d.background;
+	},
+	'color': function(d){
+		return d.color;
+	},
+	'width': function(d){
+		return d.width+'%';
+	},
+	});
+</script>
+					</code></pre>
 <!--
 					<h2>High yielding cultivars</h2>
 					<ul class="items">
