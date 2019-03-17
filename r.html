@@ -309,19 +309,18 @@
 					<h3 id="rregression">Creating regression charts between crop traits</h1>
 					<pre><code>
 					library(ggplot2)
-library(gridExtra)
-c1a <- ggplot(soydata, aes(x = disRes, y = yield)) +
-			geom_point(aes(size=3, color="red") + geom_smooth(method = "lm", se = TRUE))
-c1b <- c1a + theme(axis.title.x = element_text(face="bold", size=12)) + labs(x="Disease 
-			Rating") + theme(axis.title.y = element_text(face="bold", size=12)) + labs(y="Yield") + theme(plot.title = element_text(face="bold", size=12)) + labs(title="Yield Response to Root Disease") + theme(panel.grid.major = element_blank(), panel.border = element_blank(), panel.background = element_blank(), axis.line = element_line(size=.4))
-m1 <- lm(soydata$yield ~ soydata$disRes)
-a1 <- signif(coef(m1)[1], digits = 2)
-b1 <- signif(coef(m1)[2], digits = 2)
-regeq1 <- paste("y = ",b1,"x + ",a1, sep="")
-regression1 <- c1b + geom_text(aes(x = 6, y = 360, label = regeq1), color="black", size=5, 
-	parse = FALSE)
-grid.arrange(r1, r2, nrow=1)
-
+					library(gridExtra)
+					c1a <- ggplot(soydata, aes(x = disRes, y = yield)) +
+								geom_point(aes(size=3, color="red") + geom_smooth(method = "lm", se = TRUE))
+					c1b <- c1a + theme(axis.title.x = element_text(face="bold", size=12)) + labs(x="Disease 
+								Rating") + theme(axis.title.y = element_text(face="bold", size=12)) + labs(y="Yield") + theme(plot.title = element_text(face="bold", size=12)) + labs(title="Yield Response to Root Disease") + theme(panel.grid.major = element_blank(), panel.border = element_blank(), panel.background = element_blank(), axis.line = element_line(size=.4))
+					m1 <- lm(soydata$yield ~ soydata$disRes)
+					a1 <- signif(coef(m1)[1], digits = 2)
+					b1 <- signif(coef(m1)[2], digits = 2)
+					regeq1 <- paste("y = ",b1,"x + ",a1, sep="")
+					regression1 <- c1b + geom_text(aes(x = 6, y = 360, label = regeq1), color="black", size=5, 
+						parse = FALSE)
+					grid.arrange(r1, r2, nrow=1)
 					</code></pre>
 				</article>
 				
@@ -341,7 +340,14 @@ grid.arrange(r1, r2, nrow=1)
 			<div class="container">
 				<article id="main-col">
 					<h3 id="scatterplotmatrices">Scatterplot matrices for soybean traits by correlation</h1>
-					<p><script src="https://gist.github.com/github-Charlie/0b5da15420ca8f13c43aeab07304b8d6.js"></script></p>
+					<pre><code>
+					library(gclus)
+trtdata.r <- abs(cor(trtdata))
+trtdata.col <- dmat.color(trtdata.r)
+trtdata.o <- order.single(trtdata.r) 
+cpairs(trtdata, trtdata.o, panel.colors=trtdata.col, gap=0.3,
+       main="Scatterplot Matrices for Soybean Traits by Correlation")
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
