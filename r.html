@@ -130,12 +130,12 @@
 					<p id="rnaMAplot">The data set should be performed with additional manipulations to filter and exclude the genes with non-differential expression. A simple scatter plot can be generated using the script below prior to the differential gene expression analysis. 
 					<pre><code>
 					ggplot(data=mydata, aes(x = CAW, y = CAD, color=CBD)) +
-  geom_point(size=3) +
-  labs(title="Scatterplot of log2 transformed gene expression data \nfrom the drought experiment of hybrid corn", x= "Log2 gene expression for CAW", y="Log2 gene expression for CAD") +
-  theme(
-    plot.title = element_text(color="#0000ff", hjust = 0.5, size=13, face="bold"),
-    axis.title.x = element_text(color="#003366", size=12, face="bold"),
-    axis.title.y = element_text(color="#003366", size=12, face="bold"))
+					  geom_point(size=3) +
+					  labs(title="Scatterplot of log2 transformed gene expression data \nfrom the drought experiment of hybrid corn", x= "Log2 gene expression for CAW", y="Log2 gene expression for CAD") +
+					  theme(
+					    plot.title = element_text(color="#0000ff", hjust = 0.5, size=13, face="bold"),
+					    axis.title.x = element_text(color="#003366", size=12, face="bold"),
+					    axis.title.y = element_text(color="#003366", size=12, face="bold"))
 					</code></pre>	
 					</p>
 
