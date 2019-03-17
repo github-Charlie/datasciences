@@ -231,12 +231,12 @@
 					<p>Multiple high-yielding commercial hybrids produced from an elite inbred:</p>
 					<pre><code>
 					#corn inbred and yield
-library(circlize)
-mydata=read.table("...mydata.csv", sep=",")
-colnames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
-rownames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
-mat=data.matrix(mydata)
-chordDiagram(mat)
+					library(circlize)
+					mydata=read.table("...mydata.csv", sep=",")
+					colnames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
+					rownames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
+					mat=data.matrix(mydata)
+					chordDiagram(mat)
 					</code></pre>
 				</article>
 				
@@ -255,7 +255,15 @@ chordDiagram(mat)
 					<h3 id="chorddiagram">Chord diagram: the SNF genic contributions to phenotypes</h3>
 					<p>The chord diagram from R is created for the genic contributions to phenotypic traits, such as biomass, protein or yield, from the main orthologs of the symbiotic nitrogen fixation (SNF) based on the averages of their gene expression levels.</p>
 					Assumed that line1 (L1) contains the gene <em>Medtr1g062620</em>, L2 contains <em>Medtr3g077720</em>, L3 contains <em>Medtr5g014820</em>, L4 contains <em>Medtr1g062620</em> and <em>Medtr3g077720</em>, L5 contains <em>Medtr1g062620</em> and <em>Medtr5g014820</em>, L6 contains <em>Medtr3g077720</em> and <em>Medtr5g014820</em>, L7 contains <em>Medtr1g062620</em>, <em>Medtr3g077720</em> and <em>Medtr5g014820</em>.<br>
-					<p><script src="https://gist.github.com/github-Charlie/30defd34aadeded98dee63f3e0ec032e.js"></script></p>
+					<pre><code>
+					#Chord diagram for the hypothetical contribution to yield from the orthologs responsible for symbiotic nitrogen fixation (SNF)
+library(circlize)
+mydata=read.table("...mydata.csv", sep=",")
+colnames(mydata)=c("L1", "L2",	"L3",	"L4",	"L5",	"L6",	"L7")
+rownames(mydata)=c("L1", "L2",	"L3",	"L4",	"L5",	"L6",	"L7")
+mat=data.matrix(mydata)
+chordDiagram(mat)
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
