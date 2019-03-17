@@ -342,11 +342,11 @@
 					<h3 id="scatterplotmatrices">Scatterplot matrices for soybean traits by correlation</h1>
 					<pre><code>
 					library(gclus)
-trtdata.r <- abs(cor(trtdata))
-trtdata.col <- dmat.color(trtdata.r)
-trtdata.o <- order.single(trtdata.r) 
-cpairs(trtdata, trtdata.o, panel.colors=trtdata.col, gap=0.3,
-       main="Scatterplot Matrices for Soybean Traits by Correlation")
+					trtdata.r <- abs(cor(trtdata))
+					trtdata.col <- dmat.color(trtdata.r)
+					trtdata.o <- order.single(trtdata.r) 
+					cpairs(trtdata, trtdata.o, panel.colors=trtdata.col, gap=0.3,
+					       main="Scatterplot Matrices for Soybean Traits by Correlation")
 					</code></pre>
 				</article>
 				
@@ -364,7 +364,18 @@ cpairs(trtdata, trtdata.o, panel.colors=trtdata.col, gap=0.3,
 			<div class="container">
 				<article id="main-col">
 					<h3>Simple plotting</h1>
-					<p><script src="https://gist.github.com/github-Charlie/551beecd95c3f5355ba2be3bd12fa2ce.js"></script></p>
+					<pre><code>
+					(A)
+x<-1:500
+y<-sin(x/10) * exp(x * -0.01)
+plot(x, y, col="#308866") #plot the dependent variable vs the independent variable.
+title(main="Simple plotting (A)", col.main="#000080")
+(B)
+x<-1:500
+y<-sin(x/80) * exp(x * -0.001)
+plot(x, y, col="#308866") #plot the dependent variable vs the independent variable.
+title(main="Simple plotting (B)", col.main="#000080")
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
