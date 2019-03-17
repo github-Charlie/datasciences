@@ -66,7 +66,27 @@
 					SQL was originally developed at IBM by Donald D. Chamberlin and Raymond F. Boyce in the early 1970s, initially called SEQUEL. It was designed to manipulate and retrieve data stored in IBM's original relational database management system.
 					</p>
 					<h3>Basic SQL statements</h3>
-					<p><script src="https://gist.github.com/github-Charlie/52351b6a7acab186ec6fce99eaee5642.js"></script></p>
+					<pre><code>
+					SELECT c1,c2,...;  --SELECT some fields FROM table1 WHERE (a clause to filter records)...
+					FROM table1;
+					WHERE condition;
+					GROUP by column-name;
+					ORDER by column-name;
+
+					SELECT * FROM table1;  --SELECT all fields FROM table1...
+
+					SELECT column_name(s) FROM table1
+					INNER JOIN table2 ON table1.column_name = table2.column_name;  --select records with matching values in both tables.
+					LEFT JOIN table2 ON table1.column_name = table2.column_name;  
+					--generate all records from the left table (table1) & the matched records from the right table (table2).
+					RIGHT JOIN table2 ON table1.column_name = table2.column_name;  
+					--generate all records from the right table (table2) & the matched records from the left table (table1). 
+					FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;  
+					--generate all records if there is a match in either left (table1) or right (table2) table records.
+
+					SELECT column_name(s) FROM table1 T1, table1 T2  --The table is joined with itself.
+					WHERE condition;
+					</code></pre>
 
 					<h3>SQL vs NoSQL</h3>
 					<p>
