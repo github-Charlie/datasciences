@@ -160,9 +160,9 @@
 					<br>
 					<pre><code>
 					library(stats)
-library(gplots)
-heatmap.2(as.matrix(mydata), col=redgreen(95), scale="row", key=T, keysize=1.5,density.info="none", 
-      trace="none", cexCol=0.9, labRow=NA)
+					library(gplots)
+					heatmap.2(as.matrix(mydata), col=redgreen(95), scale="row", key=T, keysize=1.5,density.info="none", 
+					      trace="none", cexCol=0.9, labRow=NA)
 					</code></pre>
 
 					<br>
@@ -175,7 +175,13 @@ heatmap.2(as.matrix(mydata), col=redgreen(95), scale="row", key=T, keysize=1.5,d
 					
 					<br>
 					<p>Thus, a heatmap of similarities can also be created among the participating genotypes based on the expressed genes under different treatment conditions:</p>
-					<script src="https://gist.github.com/github-Charlie/02e1211da446f9ed223721ac8029ffa1.js"></script>
+					<pre><code>
+					library(RColorBrewer)
+mydata = as.matrix(dist(t(mydata)))
+mydata = (mydata - min(mydata))/(max(mydata) - min(mydata))
+hmcol = colorRampPalette(brewer.pal(9, "GnBu"))(100)
+heatmap(mydata, col=hmcol)
+					</code></pre>
 
 				</article>
 				
