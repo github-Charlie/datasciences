@@ -177,10 +177,10 @@
 					<p>Thus, a heatmap of similarities can also be created among the participating genotypes based on the expressed genes under different treatment conditions:</p>
 					<pre><code>
 					library(RColorBrewer)
-mydata = as.matrix(dist(t(mydata)))
-mydata = (mydata - min(mydata))/(max(mydata) - min(mydata))
-hmcol = colorRampPalette(brewer.pal(9, "GnBu"))(100)
-heatmap(mydata, col=hmcol)
+					mydata = as.matrix(dist(t(mydata)))
+					mydata = (mydata - min(mydata))/(max(mydata) - min(mydata))
+					hmcol = colorRampPalette(brewer.pal(9, "GnBu"))(100)
+					heatmap(mydata, col=hmcol)
 					</code></pre>
 
 				</article>
@@ -229,7 +229,15 @@ heatmap(mydata, col=hmcol)
 					<br>
 					<h3 id="inbredhybrid">Chord diagram: an elite inbred and its multiple hybrids</h3>
 					<p>Multiple high-yielding commercial hybrids produced from an elite inbred:</p>
-					<p><script src="https://gist.github.com/github-Charlie/a379e517938660f9ea459de8f415293a.js"></script></p>
+					<pre><code>
+					#corn inbred and yield
+library(circlize)
+mydata=read.table("...mydata.csv", sep=",")
+colnames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
+rownames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
+mat=data.matrix(mydata)
+chordDiagram(mat)
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
