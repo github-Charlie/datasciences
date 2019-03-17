@@ -257,12 +257,12 @@
 					Assumed that line1 (L1) contains the gene <em>Medtr1g062620</em>, L2 contains <em>Medtr3g077720</em>, L3 contains <em>Medtr5g014820</em>, L4 contains <em>Medtr1g062620</em> and <em>Medtr3g077720</em>, L5 contains <em>Medtr1g062620</em> and <em>Medtr5g014820</em>, L6 contains <em>Medtr3g077720</em> and <em>Medtr5g014820</em>, L7 contains <em>Medtr1g062620</em>, <em>Medtr3g077720</em> and <em>Medtr5g014820</em>.<br>
 					<pre><code>
 					#Chord diagram for the hypothetical contribution to yield from the orthologs responsible for symbiotic nitrogen fixation (SNF)
-library(circlize)
-mydata=read.table("...mydata.csv", sep=",")
-colnames(mydata)=c("L1", "L2",	"L3",	"L4",	"L5",	"L6",	"L7")
-rownames(mydata)=c("L1", "L2",	"L3",	"L4",	"L5",	"L6",	"L7")
-mat=data.matrix(mydata)
-chordDiagram(mat)
+					library(circlize)
+					mydata=read.table("...mydata.csv", sep=",")
+					colnames(mydata)=c("L1", "L2",	"L3",	"L4",	"L5",	"L6",	"L7")
+					rownames(mydata)=c("L1", "L2",	"L3",	"L4",	"L5",	"L6",	"L7")
+					mat=data.matrix(mydata)
+					chordDiagram(mat)
 					</code></pre>
 				</article>
 				
@@ -280,7 +280,15 @@ chordDiagram(mat)
 			<div class="container">
 				<article id="main-col">
 					<h3 id="corrmatrix">Graphical display of a correlation matrix of soybean traits</h1>
-					<p><script src="https://gist.github.com/github-Charlie/71f71f4ebc600a61f8213257d762d368.js"></script></p>
+					<pre><code>
+					library(tidyverse)
+library(data.table)
+library(corrplot)
+soydata<- read.csv("sdata.csv")
+trtdata <- select(soydata, yield, disRes, height, lodging, seedwt, protein, oil, sumpo)
+matrix <- cor(trtdata);
+corrplot(matrix, method="color", type="upper")
+					</code></pre>
 				</article>
 				
 				<aside id="sidebar">
