@@ -145,7 +145,15 @@
 					<img src="https://latex.codecogs.com/gif.latex?A&space;=&space;\frac{S_{1}&space;&plus;&space;S_{2}}{2}" title="A = \frac{S_{1} + S_{2}}{2}" /> <br>
 					where, <img src="https://latex.codecogs.com/gif.latex?S_{1}" title="S_{1}" /> and <img src="https://latex.codecogs.com/gif.latex?S_{2}" title="S_{2}" /> are the expression data for sample <em>1</em> and <em>2</em>, respectively.
 					<br><br>
-					<script src="https://gist.github.com/github-Charlie/3c4c5fc3cb42c60c60bc8134ec965555.js"></script>
+					<pre><code>
+					ggplot(data=mydata, aes(x = A, y = M, color=CBD)) +
+         geom_point(size=3) +
+         labs(title="MA-plot for log2 transformed gene expression data \nfrom the drought experiment of hybrid corn", x= "Log2 mean expression", y="Log2 fold change\n(drought condition vs optimal water supply)") +
+         theme(
+         plot.title = element_text(color="#0000ff", hjust = 0.5, size=13, face="bold"),
+         axis.title.x = element_text(color="#003366", size=12, face="bold"),
+         axis.title.y = element_text(color="#003366", size=12, face="bold"))
+					</code></pre>
 					
 					<br>
 					To generate a heatmap for clustering gene expression leveles across samples and treatments:
