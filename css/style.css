@@ -208,9 +208,9 @@ footer {
 
 	.mobile-nav{
 		display: block;
-		height: 40px;
+		height: 10px;
 		width: 100%;
-		background: url(img/mobile.png) no-repeat 98% center;
+		background: url(../img/mobile.png) no-repeat 98% center;
 		background-color: #800000;
 		cursor: pointer;
 	}
