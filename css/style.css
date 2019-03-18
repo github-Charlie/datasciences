@@ -204,7 +204,7 @@ footer {
 }
 
 /* Media Queries*/
-@media(max-width:768px){
+@media screen and (max-width:768px){
 
 	.mobile-nav{
 		display: block;
