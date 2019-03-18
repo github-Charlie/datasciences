@@ -205,6 +205,13 @@ footer {
 
 /* Media Queries*/
 @media(max-width:768px){
+
+	.mobile-nav{
+		display: block;
+		height: 40px;
+		width: 100%;
+	}
+
 	header #branding,
 	header nav,
 	header nav li,
