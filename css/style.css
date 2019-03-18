@@ -223,11 +223,26 @@ footer {
 	header nav ul{
 		overflow: hidden;
 		background: #505050;
-		height: 0;
+		//height: 0;
 	}
 
 	header nav ul.open{
 		height: auto;
+	}
+
+	header nav ul li{
+		float: none;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+	}
+
+	header nav ul li a{
+		color: #fff;
+		padding: 10px;
+		border-bottom: 1px solid #404040;
+		display: block;
+		margin: 0;
 	}
 
 	header #branding,
