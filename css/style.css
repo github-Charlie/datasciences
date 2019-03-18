@@ -210,6 +210,9 @@ footer {
 		display: block;
 		height: 40px;
 		width: 100%;
+		background: url(img/mobile.png) no-repeat 98% center;
+		background-color: #404040;
+		cursor: pointer;
 	}
 
 	header #branding,
