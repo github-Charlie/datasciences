@@ -281,6 +281,12 @@ footer {
 	.navbar-nav{display: none}
 }
 
+@media(max-width:568px){
+	.container{
+		margin: auto;
+	}
+}
+
 @media(min-width: 568px){
 	/*.open-slide{display: none}*/
 }
