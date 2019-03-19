@@ -278,7 +278,7 @@ footer {
 
 /* Media Queries*/
 @media(max-width:768px){
-	.navbar-nav{display: none}
+	/*.navbar-nav{display: none}*/
 }
 
 @media(max-width:768px){
