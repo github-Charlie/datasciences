@@ -281,7 +281,7 @@ footer {
 	.navbar-nav{display: none}
 }
 
-@media(max-width:568px){
+@media(max-width:768px){
 	.container{
 		margin: auto;
 	}
