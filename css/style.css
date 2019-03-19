@@ -78,7 +78,6 @@ body{
 	width:80%;
 	height:100%;
 	overflow:hidden;
-	align-items: center;
 }
 
 .line{
@@ -194,7 +193,7 @@ header a:hover{
 }
 
 #boxes .container{
-	margin-left: auto;
+	margin: auto;
 }
 
 #boxes .box{
