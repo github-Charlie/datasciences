@@ -239,6 +239,7 @@ aside#sidebar textarea{
 article#main-col{
 	float:left;
 	width:65%;
+	margin: auto;
 }
 
 hr {
