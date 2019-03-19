@@ -277,7 +277,7 @@ footer {
 }
 
 /* Media Queries*/
-@media(max-width:568px){
+@media(max-width:768px){
 	.navbar-nav{display: none}
 }
 
