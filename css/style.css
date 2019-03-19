@@ -41,7 +41,7 @@ body{
 	background-color: #111;
 	opacity: 0.8;
 	overflow-x: hidden;
-	padding-top: 60px;
+	padding-top: 40px;
 	transition: 0.5s;
 }
 
@@ -61,8 +61,8 @@ body{
 .side-nav .btn-close{
 	position: absolute;
 	top: 0;
-	right: 22px;
-	font-size: 26px;
+	right: 26px;
+	font-size: 22px;
 	margin-left: 50px;
 }
 
@@ -77,8 +77,8 @@ body{
 .container{
 	width:80%;
 	height:100%;
-	margin:auto;
 	overflow:hidden;
+	align-content: center;
 }
 
 .line{
@@ -191,7 +191,10 @@ header a:hover{
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
-	align:middle;
+}
+
+#boxes .container{
+	margin: auto;
 }
 
 #boxes .box{
@@ -208,6 +211,7 @@ header a:hover{
 #boxes .box img{
 	width: 250px;
 	height: 170px;
+	width: 100%
 }
 
 h1 {
