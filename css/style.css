@@ -291,7 +291,7 @@ footer {
 	/*.open-slide{display: none}*/
 }
 
-@media(max-width:568px){
+@media(max-width:768px){
 	.boxes{
 		  display: block;
 		  box-align: center;
