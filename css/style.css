@@ -9,6 +9,8 @@ body{
 	background-color: #3b5998;
 	overflow: hidden;
 	height: 63px;
+	width: 92%;
+	align-self: center;
 }
 
 .navbar a{
@@ -279,7 +281,10 @@ footer {
 
 /* Media Queries*/
 @media(max-width:768px){
-	/*.navbar-nav{display: none}*/
+	.navbar-nav{
+		display: none;
+		width: 0;
+	}
 }
 
 @media(max-width:768px){
@@ -289,9 +294,9 @@ footer {
 	}
 }
 
-@media(min-width: 568px){
-	/*.open-slide{display: none}*/
-}
+@media(min-width: 768px){
+	/*.open-slide{display: none}
+}*/
 
 @media(max-width:768px){
 	.boxes{
