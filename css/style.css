@@ -199,6 +199,10 @@ header a:hover{
 	margin: auto;
 }
 
+#main .container{
+	margin: auto;
+}
+
 #boxes .box{
 	float:left;
 	text-align:center;
