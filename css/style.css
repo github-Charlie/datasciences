@@ -124,6 +124,7 @@ header{
 	color:#ffffff;
 	padding-top:15px;
 	min-height:10px;
+	margin: auto;
 	border-bottom:#308866 5px solid;
 }
 
@@ -157,10 +158,6 @@ header .branding{
 header nav {
 	float:right;
 	margin-top:15px;
-}
-
-#container .navbar-nav{
-	margin: auto;
 }
 
 header .highlight, header .current a{
