@@ -128,7 +128,7 @@ header{
 }
 
 header{
-	margin: auto;
+	align-content: auto;
 }
 
 header a{
