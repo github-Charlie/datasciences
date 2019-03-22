@@ -134,9 +134,9 @@ header a{
 	font-size:16px;
 }
 
-nav navbar {
+/*nav navbar {
 	margin: auto;
-}
+}*/
 
 header li{
 	float:left;
@@ -157,6 +157,10 @@ header .branding{
 header nav {
 	float:right;
 	margin-top:15px;
+}
+
+header nav {
+	margin: auto;
 }
 
 header .highlight, header .current a{
