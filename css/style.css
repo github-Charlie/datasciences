@@ -14,10 +14,6 @@ body{
 	/*margin: auto;*/
 }
 
-.navbar-nav{
-	margin: auto;
-}
-
 .navbar a{
 	float: left;
 	display: block;
@@ -136,6 +132,10 @@ header a{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-size:16px;
+}
+
+nav navbar{
+	margin: auto;
 }
 
 header li{
