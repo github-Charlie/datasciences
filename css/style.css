@@ -157,11 +157,10 @@ header .branding{
 header nav {
 	float:right;
 	margin-top:15px;
-	margin: auto;
 }
 
-header nav {
-	
+container nav {
+	margin: auto;
 }
 
 header .highlight, header .current a{
