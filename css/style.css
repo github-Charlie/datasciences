@@ -124,8 +124,11 @@ header{
 	color:#ffffff;
 	padding-top:15px;
 	min-height:10px;
-	margin: auto;
 	border-bottom:#308866 5px solid;
+}
+
+header{
+	margin: auto;
 }
 
 header a{
