@@ -134,7 +134,8 @@ header a{
 	font-size:16px;
 }
 
-header #navbar{
+header .container{
+	text-align: center;
 	margin: auto;
 }
 
