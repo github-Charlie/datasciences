@@ -127,10 +127,6 @@ header{
 	border-bottom:#308866 5px solid;
 }
 
-header{
-	text-align: center;
-}
-
 header a{
 	color:#ffffff;
 	text-decoration:none;
@@ -138,9 +134,9 @@ header a{
 	font-size:16px;
 }
 
-/*nav navbar {
+nav navbar{
 	margin: auto;
-}*/
+}
 
 header li{
 	float:left;
