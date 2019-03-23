@@ -176,7 +176,7 @@ header a:hover{
 	background-image:url("../img/codep2.jpg");
 	background-repeat:no-repeat;
     background-size: 100% 100%;
-	text-align:center;
+	/*text-align:center;*/
 	color:#00FF00;
 	border-bottom:#308866 5px solid;
 }
