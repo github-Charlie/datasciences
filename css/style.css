@@ -186,12 +186,13 @@ header a:hover{
 	font-size:50px;
 	margin-bottom:10px;
 	color:#00FF00;
-	margin: auto;
+	text-align: center;
 }
 
 #showcase h2{
 	font-size:24px;
 	color:#00FF00;
+	text-align: center;
 }
 
 /* Boxes */
