@@ -84,6 +84,10 @@ body{
 	overflow:hidden;
 }
 
+div.container {
+  text-align: center;
+}
+
 .line{
 	width:80%
 }
@@ -201,6 +205,10 @@ header a:hover{
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
+}
+
+#showcase .container{
+	margin: auto;
 }
 
 #boxes .container{
