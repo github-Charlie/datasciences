@@ -85,12 +85,12 @@ body{
 .container{
 	width:80%;
 	height:100%;
-	align-content: left;
+	align-content: center;
 	overflow:hidden;
 }
 
 div.container {
-  text-align: center;
+  text-align: left;
 }
 
 .line{
