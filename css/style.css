@@ -35,6 +35,10 @@ body{
 }
 
 .side-nav{
+	text-align: left;
+}
+
+.side-nav{
 	height: 60%;
 	width: 0;
 	position: fixed;
@@ -46,6 +50,7 @@ body{
 	overflow-x: hidden;
 	padding-top: 40px;
 	transition: 0.5s;
+	align: left;
 }
 
 .side-nav a{
