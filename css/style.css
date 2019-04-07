@@ -326,6 +326,7 @@ footer {
 @media(max-width:768px){
 	.boxes{
 		  display: block;
+		  align-content: center;
 		  /*boxes-align: center;
 		  margin-left: auto;
 		  margin-right: auto;*/
