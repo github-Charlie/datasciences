@@ -313,8 +313,8 @@ footer {
 }
 
 @media(max-width:768px){
-	.container{
-		margin: auto;
+	boxes #container{
+		/*margin: auto;*/
 		align-content: center;
 	}
 }
@@ -322,12 +322,6 @@ footer {
 @media(min-width: 768px){
 	/*.open-slide{display: none}
 }*/
-
-@media(max-width:768px){
-	boxes .container{
-		align-content: center;
-	}
-}
 
 @media(max-width:768px){
 	.boxes{
