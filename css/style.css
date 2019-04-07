@@ -326,6 +326,7 @@ footer {
 @media(max-width:768px){
 	.boxes{
 		align-content: center;
+		justify-content: center;
 	}
 }
 
