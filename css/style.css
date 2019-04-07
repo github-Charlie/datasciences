@@ -324,7 +324,7 @@ footer {
 }*/
 
 @media(max-width:768px){
-	boxes #container{
+	boxes#container{
 		margin: auto;
 	}
 }
