@@ -1,4 +1,4 @@
-## <span style="color:green">Welcome to My GitHub Pages Related to Data Sciences<br> (https://datute.net/)</span>
+## <span style="color:green">Welcome to My GitHub Pages Related to Data Sciences (https://datute.net/)</span>
 
 Use the following [editor on GitHub](https://github.com/github-Charlie/myworld/edit/master/README.md) to maintain and preview the content for the website in Markdown files.
 
