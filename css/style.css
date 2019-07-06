@@ -335,8 +335,8 @@ footer {
 
 @media(max-width:768px){
 	.responsive {
-  				width: 100%;
-  				height: auto;
+  		width: 100%;
+  		height: auto;
 	}
 }
 
