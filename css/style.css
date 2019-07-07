@@ -127,10 +127,12 @@ ul {
 	margin-bottom:8px;
 }
 
+/*
 .responsive{
   		width: 100%;
   		height: auto;
 }
+*/
 
 /* Header */
 header{
@@ -323,6 +325,13 @@ footer {
 		align-content: center;
 	}
 }
+
+@media(min-width: 768px){
+	.responsive {
+  				width: 100%;
+  				height: auto;
+}
+
 
 @media(min-width: 768px){
 	/*.open-slide{display: none}
