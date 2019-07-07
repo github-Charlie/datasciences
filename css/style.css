@@ -326,7 +326,7 @@ footer {
 	}
 }
 
-@media(min-width: 768px){
+@media(max-width: 768px){
 	.responsive {
   				width: 100%;
   				height: auto;
