@@ -322,7 +322,7 @@ footer {
 @media(max-width: 768px){
 	.responsive {
   				width: 100%;
-  				max-width: 400px;
+  				max-width: 800px;
   				height: auto;
 }
 
