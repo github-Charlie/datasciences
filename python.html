@@ -190,13 +190,18 @@
 					<p>A bubble plot is similarly a scatterplot of x- and y-axis with additional third variable or dimension equivalent to a z-axis. The additional third numeric variable is indicated using the size of the bubbles. For example, in order to explore the dynamics of GMO soybean production (Herbicide-tolerant) in 2018, the GMO% of all soybeans planted is plotted for the states that produce most soybeans relative to their GDP where the bubble size is presented as the corresponding population, proportionally.</p>
 
 					<pre><code>
-					import pandas as pd
-					data=pd.read_csv("transmydata.csv")
-					import numpy as np
-					import matplotlib.pyplot as plt
-					from pandas.plotting import scatter_matrix
-					df = pd.DataFrame(data, columns = ['CAW', 'CBW', 'CAD', 'CBD'])
-					scatter_matrix(df, diagonal = ‘kde’, alpha = 0.6, figsize = (5, 5), c=df['CAD'])
+ 					import matplotlib.pyplot as plt
+					import numpy
+					x, y, s = numpy.loadtxt('/Users/Owner/Documents/DS-Projects/SoybeanGMO/mydata.csv', delimiter=',', unpack=True, usecols=(2, 3, 4), skiprows=1)
+					GDP, GMO, pop = x, y, s
+					colors = ['#002387', '#043927', '#4C2882', '#48BF91', '#4F42B5', '#800080', '#DA70D6', '#CFB53B', '#D1E231', '#D7837F', '#DF00FF', '#39FF14', '#FE2712', '#FF5800']
+					state = ['AR', 'IL', 'IN', 'IA', 'KS', 'MI', 'MN', 'MS', 'MO', 'NE', 'ND', 'OH', 'SD', 'WI']
+					plt.title('Bubble Chart for GMO% of All Soybeans Planted Across States (Herbicide-tolerant, 2018; bubble size corresponds to population)', color='#006400')
+					plt.xlabel('State GDP (x1000M USD)', color='#006400')
+					plt.ylabel('GMO% of All Soybeans Planted', color='#006400')
+					plt.scatter(x=GDP, y=GMO, s=pop, alpha=0.6, c=colors)
+					for i, txt in enumerate(state):
+					    plt.annotate(txt, (x[i], y[i]), ha='center', va='center')
 					plt.show()
 					</code></pre>
 				</article>
