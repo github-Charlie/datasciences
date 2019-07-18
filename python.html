@@ -186,6 +186,34 @@
 				<article id="main-col">
 					<hr><br>
 					<h1>Python Applications</h1>
+					<h3 id="static-bubble">Create a bubble chart</h3>
+					<p>A bubble plot is similarly a scatterplot of x- and y-axis with additional third variable or dimension equivalent to a z-axis. The additional third numeric variable is indicated using the size of the bubbles. For example, in order to explore the dynamics of GMO soybean production (Herbicide-tolerant) in 2018, the GMO% of all soybeans planted is plotted for the states that produce most soybeans relative to their GDP where the bubble size is presented as the corresponding population, proportionally.</p>
+
+					<pre><code>
+					import pandas as pd
+					data=pd.read_csv("transmydata.csv")
+					import numpy as np
+					import matplotlib.pyplot as plt
+					from pandas.plotting import scatter_matrix
+					df = pd.DataFrame(data, columns = ['CAW', 'CBW', 'CAD', 'CBD'])
+					scatter_matrix(df, diagonal = ‘kde’, alpha = 0.6, figsize = (5, 5), c=df['CAD'])
+					plt.show()
+					</code></pre>
+				</article>
+				
+				<aside id="sidebar">
+					<div class="purple">
+					<a href="pimg/pimg14.png" style="text-decoration:none;">
+					<img src="pimg/pimg14.png" alt="static-bubble" height="100%" width="100%">
+					<p><font color="#ffffff">A bubble chart for GMO% of all soybeans planted across the States in 2018.</font></p>
+					</a>
+					</div>
+				</aside>
+			</div>
+			<br>
+
+			<div class="container">
+				<article id="main-col">
 					<h3 id="rna-seq">Visualization of gene expression data</h3>
 					<p>To follow the RNA-seq data analysis using <a href="r.html#rnacim">R</a> based on the hypothetical example from maize gene expression, a scatter plot matrix is created for the selected sample-treatment combinations using Python, where the diagonal displays the plots of the probability density function through kernel density estimation (KDE). </p>
 					<pre><code>
