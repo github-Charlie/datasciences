@@ -183,8 +183,7 @@ header a:hover{
 #showcase {
 	min-height:400px;
 	background-image:url("../img/codep2.jpg");
-	background-image:url("../img/statp2.jpg");
-	background-repeat:repeat;
+	background-repeat:no-repeat;
     background-size: 100% 100%;
 	text-align:center;
 	color:#00FF00;
