@@ -1,4 +1,5 @@
 ## <span style="color:green">Welcome to My GitHub Pages Related to Data Sciences (https://datute.net/)</span>
+<img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
 
 Use the following [editor on GitHub](https://github.com/github-Charlie/myworld/edit/master/README.md) to maintain and preview the content for the website in Markdown files.
 
