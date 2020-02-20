@@ -15,7 +15,7 @@ The term “big data” was first corned in 1997 by the NASA astronomers Michael
 
 "Big data is high-volume, high-velocity and/or high-variety information assets that demand cost-effective, innovative forms of information processing that enable enhanced insight, decision making, and process automation." -- Gartner (2012)
 
-Accordingly, big data have three defining properties/dimensions including (1) <b>volume</b> (quantity), (2) variety (types: structured, semi-structured and unstructured) and (3) velocity (streaming data with speed). The variety of big data implies any of the following types:
+Accordingly, big data have three defining properties/dimensions including (1) <b>volume</b> (quantity), (2) <strong>variety</strong> (types: structured, semi-structured and unstructured) and (3) velocity (streaming data with speed). The variety of big data implies any of the following types:
 
 Structured data: RDBMS data, easily retrieved through SQL.
 Semi-structured data: data in files (xml, json docs, NoSQL database).
