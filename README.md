@@ -1,7 +1,6 @@
 ## Welcome to My GitHub: DATA SCIENCE
 
 (https://datute.net/)
-
 <a href="https://datute.net/">
 <img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
 </a>
@@ -12,6 +11,7 @@
 "Data science is a 'concept to unify statistics, data analysis, machine learning and their related methods' in order to 'understand and analyze actual phenomena' with data. It employs techniques and theories drawn from many fields within the context of mathematics, statistics, information science, and computer science." -- Wikipedia (November 13, 2018)
 
 ## Big data
+
 <a href="https://twitter.com/ChunlinHe">
 <img src="gimg/gimg2.jpg" alt="bigdata" height="100%" width="100%">
 </a>
