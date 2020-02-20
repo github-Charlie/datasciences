@@ -18,6 +18,6 @@ The term “big data” was first corned in 1997 by the NASA astronomers Michael
 
 Accordingly, big data have three defining properties/dimensions including (1) <strong>volume</strong> (quantity), (2) <strong>variety</strong> (types: structured, semi-structured and unstructured) and (3) <strong>velocity</strong> (streaming data with speed). The variety of big data implies any of the following types:
 
-Structured data: RDBMS data, easily retrieved through SQL.
+<li>Structured data: RDBMS data, easily retrieved through SQL.</li>
 Semi-structured data: data in files (xml, json docs, NoSQL database).
 Unstructured data: images, videos, text files etc.
