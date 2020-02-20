@@ -1,7 +1,9 @@
 ## Welcome to My GitHub - DATA SCIENCE
 <center>(https://datute.net/)</center>
 
+<a href="https://datute.net/">
 <img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
+</a>
 
 ## Data science definition
 "Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from data in various forms, both structured and unstructured."
