@@ -1,4 +1,4 @@
-## Welcome to My GitHub - DATA SCIENCE
+## Welcome to My GitHub: DATA SCIENCE
 <center>(https://datute.net/)</center>
 
 <a href="https://datute.net/">
