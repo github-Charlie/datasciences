@@ -21,3 +21,5 @@ Accordingly, big data have three defining properties/dimensions including (1) <s
 <li><b>Structured data:</b> RDBMS data, easily retrieved through SQL.</li>
 <li><b>Semi-structured data:</b> data in files (xml, json docs, NoSQL database).</li>
 <li><b>Unstructured data:</b> images, videos, text files etc.</li>
+
+## Big Data Analytics
