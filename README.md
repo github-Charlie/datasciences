@@ -25,10 +25,10 @@ Accordingly, big data have three defining properties/dimensions including (1) <s
 ## Big Data Analytics
 Data processing and analytics include building and training machine learning models, manipulating data with technology, extracting information from data as well as building data tools, applications, and services. It may consist of the following major steps (Big Data Science & Analytics, 2016):
 
-Framing the problem
-Data acquisition for the problem
-Data wrangling
-Machine learning
-Developing a statistical/mathematical model
-Data visualization
-Communicating the output of the analysis: (1) data report, and (2) data products.
+<li>Framing the problem</li>
+<li>Data acquisition for the problem</li>
+<li>Data wrangling</li>
+<li>Machine learning</li>
+<li>Developing a statistical/mathematical model</li>
+<li>Data visualization</li>
+<li>Communicating the output of the analysis: (1) data report, and (2) data products.</li>
