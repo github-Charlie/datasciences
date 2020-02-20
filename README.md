@@ -1,5 +1,5 @@
 ## <span style="color:green">... </span>
-## Welcome to My GitHub - DATA SCIENCE
+## <center>Welcome to My GitHub - DATA SCIENCE</center>
 <center>(https://datute.net/)</center>
 
 <img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
