@@ -1,5 +1,6 @@
 ## Welcome to My GitHub: DATA SCIENCE
-    (https://datute.net/)
+
+(https://datute.net/)
 
 <a href="https://datute.net/">
 <img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
