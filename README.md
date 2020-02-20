@@ -22,7 +22,7 @@ Accordingly, big data have three defining properties/dimensions including (1) <s
 <li><b>Semi-structured data:</b> data in files (xml, json docs, NoSQL database).</li>
 <li><b>Unstructured data:</b> images, videos, text files etc.</li>
 
-## Big Data Analytics
+## Data Analytics
 Data processing and analytics include building and training machine learning models, manipulating data with technology, extracting information from data as well as building data tools, applications, and services. It may consist of the following major steps (Big Data Science & Analytics, 2016):
 
 <li>Framing the problem</li>
