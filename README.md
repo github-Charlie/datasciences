@@ -1,5 +1,6 @@
 ## <span style="color:green">... </span>
-Welcome to My GitHub Pages Related to Data Sciences (https://datute.net/)
+## Welcome to My GitHub - DATA SCIENCE
+<center>(https://datute.net/)</center>
 
 <img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
 
