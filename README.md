@@ -2,7 +2,8 @@
 ## <center>         Welcome to My GitHub - DATA SCIENCE</center>
 <center>(https://datute.net/)</center>
 
-<img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%"><center>(https://datute.net/)</center>
+<img src="gimg/gimg1.jpg" alt="homepagepic" height="100%" width="100%">
+<center>(https://datute.net/)</center>
 
 Use the following [editor on GitHub](https://github.com/github-Charlie/myworld/edit/master/README.md) to maintain and preview the content for the website in Markdown files.
 
