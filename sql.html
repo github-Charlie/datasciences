@@ -11,7 +11,7 @@
 		<title>Data Sciences|SQL</title>
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/mlp7.jpg" />
-		
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116330579-1"></script>
 		<script>
@@ -32,14 +32,14 @@
 					   <circle cx="32" cy="32" r="10" fill="#00FFFF"/>
 					   <circle cx="54" cy="32" r="10" fill="#ffff00"/>
 					   <circle cx="32" cy="54" r="10" fill="#ff0000"/>
-					   <text x="70" y="40" font-size="20px" font-weight="bold" fill="#00FF00">DATA SCIENCES</text>
+					   <text x="70" y="40" font-size="20px" font-weight="bold" fill="#00FF00">DATA SCIENCE</text>
 					</svg>
 					</a>
 					<!-- <h1><span class="highlight"><a class="branding" href="index.html">DATA SCIENCES
 					</a></span>
 					</h1> -->
 				</div>
-				
+
 				<nav class="navbar">
 					<span class="open-slide">
 						<a href="#" onclick="openSlideMenu()">
@@ -74,7 +74,7 @@
 					<a href="bigdata.html">Bigdata</a>
 					<a href="about.html">About</a>
 				</div>
-				
+
 				<script>
 					function openSlideMenu(){
 						document.getElementById('side-menu').style.width
@@ -92,7 +92,7 @@
 				</script>
 			</div>
 		</header>
- 
+
 		<section id="main">
 			<div class="container">
 				<aside id="sidebar">
@@ -115,7 +115,7 @@
 					<p>
 					The SQL language is used to operate databases including database creation, data query, update, schema creation and modification as well as data access control. It is an ANSI (American National Standards Institute) standard language with different versions for Relational Database System. The RDBMS (such as MySQL, MS SQL Server, IBM DB2, Sybase, PostgreSQL, SQLite, Oracle, MS Access) use SQL as their standard database language.
 					</p>
-					
+
 					<h3>Basic SQL statements</h3>
 					<pre><code>
 					SELECT c1,c2,...;  --SELECT some fields FROM table1 WHERE (a clause to filter records)...
@@ -128,11 +128,11 @@
 
 					SELECT column_name(s) FROM table1
 					INNER JOIN table2 ON table1.column_name = table2.column_name;  --select records with matching values in both tables.
-					LEFT JOIN table2 ON table1.column_name = table2.column_name;  
+					LEFT JOIN table2 ON table1.column_name = table2.column_name;
 					--generate all records from the left table (table1) & the matched records from the right table (table2).
-					RIGHT JOIN table2 ON table1.column_name = table2.column_name;  
-					--generate all records from the right table (table2) & the matched records from the left table (table1). 
-					FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;  
+					RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+					--generate all records from the right table (table2) & the matched records from the left table (table1).
+					FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
 					--generate all records if there is a match in either left (table1) or right (table2) table records.
 
 					SELECT column_name(s) FROM table1 T1, table1 T2  --The table is joined with itself.
@@ -144,7 +144,7 @@
 					The database technology has two main types of databases including SQL (structured query language) and NoSQL (“non SQL" or “Not only SQL"), which refer to relational databases and non-relational databases, respectively. Unlike SQL, NoSQL databases are document-oriented instead of tables. Thus, the unstructured data (such as articles, photos, videos, and web content etc.) are stored in a single document that is different from SQL databases (<a href="https://amzn.to/2Gmzsqh" target="_blank">SQL & NoSQL Databases, 2019</a>).
 					</p>
 					<p>
-					NoSQL databases have an advantage of ease of access by the app developers while relational databases are not easily accessible to the applications developed using the object-oriented programming languages such as Python and PHP (Hypertext Preprocessor).  
+					NoSQL databases have an advantage of ease of access by the app developers while relational databases are not easily accessible to the applications developed using the object-oriented programming languages such as Python and PHP (Hypertext Preprocessor).
 					</p>
 				</article>
 			</div>
@@ -200,18 +200,18 @@
 			</div>
 		</section>
 		<br><br><br>
-		
+
 		<footer>
-			<p>Data Sciences, Copyright &copy; 2020 
+			<p>Data Sciences, Copyright &copy; 2020
 			<a href="https://twitter.com/ChunlinHe" target="_blank"><img src="img/tweet_icon.png" width="31" height="31" alt="" /></a>
 			<a href="https://www.linkedin.com/in/chunlinhe888" target="_blank"><img src="img/in_icon.png" width="31" height="31" alt="" /></a>
-			</p>			
+			</p>
 			<p id="time"></p>
 			<script>
 			document.getElementById("time").innerHTML = Date();
 			</script>
 		</footer>
-	
+
 </body>
 
-</html> 
+</html>
