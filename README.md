@@ -36,5 +36,5 @@ Data processing and analytics include building and training machine learning mod
 <li>Machine learning</li>
 <li>Developing a statistical/mathematical model</li>
 <li>Data visualization</li>
-<li>Communicating the output of the analysis: (1) data report, and (2) data products.</li>
-</b>
+<li>Communicating the output of the analysis:</b> (1) data report, and (2) data products.</li>
+
