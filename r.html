@@ -11,7 +11,7 @@
 		<title>Data Sciences|R</title>
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="shortcut icon" type="image/x-icon" href="img/mlp7.jpg" />
-		
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116330579-1"></script>
 		<script>
@@ -32,7 +32,7 @@
 					   <circle cx="32" cy="32" r="10" fill="#00FFFF"/>
 					   <circle cx="54" cy="32" r="10" fill="#ffff00"/>
 					   <circle cx="32" cy="54" r="10" fill="#ff0000"/>
-					   <text x="70" y="40" font-size="20px" font-weight="bold" fill="#00FF00">DATA SCIENCES</text>
+					   <text x="70" y="40" font-size="20px" font-weight="bold" fill="#00FF00">DATA SCIENCE</text>
 					</svg>
 					</a>
 					<!-- <h1><span class="highlight"><a class="branding" href="index.html">DATA SCIENCES
@@ -74,7 +74,7 @@
 					<a href="bigdata.html">Bigdata</a>
 					<a href="about.html">About</a>
 				</div>
-				
+
 				<script>
 					function openSlideMenu(){
 						document.getElementById('side-menu').style.width
@@ -92,7 +92,7 @@
 				</script>
 			</div>
 		</header>
-		
+
 		<section id="main">
 			<div class="container">
 				<aside id="sidebar">
@@ -108,7 +108,7 @@
 					<h1 class="page-title">R Programming</h1>
 					<h3>R basics</h3>
 					<p>
-					R is a free programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis. 
+					R is a free programming language and software environment for statistical computing and graphics that is supported by the R Foundation for Statistical Computing. The R language is widely used among statisticians and data miners for developing statistical software and data analysis.
 					</p>
 					<p>
 					This is simply an introduction on using R for computational genomics. It is aimed at wet-lab researchers who wants to use R in their data analysis ,and bioinformaticians who are new to R and wants to learn more about its capabilities for genomics data analysis. As new high-throughout experimental techniques on the rise, data analysis capabilities are sought-after features for researchers. R, with its statistical heritage, plotting features and rich user-contributed packages is one of the best languages for the task of analyzing data.
@@ -119,10 +119,10 @@
 					<ul>
 							<li>Data summary and exploration</li>
 							<li>Graphical presentation</li>
-							<li>Data modelling</li> 
+							<li>Data modelling</li>
 					</ul>
 					<p>
-					R is considered as one of the most effective environment and language for manipulating and analyzing data in statistics. It can generate graphics with high quality for publication including relevant formulae and mathematical symbols. 
+					R is considered as one of the most effective environment and language for manipulating and analyzing data in statistics. It can generate graphics with high quality for publication including relevant formulae and mathematical symbols.
 					</p>
 					<p>
 					Unlike other statistical softwares, R stores information and operates on objects, such as scalars, vectors, matrices, lists and dataframes etc. It is very useful to define new types of object to target particular applications.  One of R's essential features is that it will do different things for different types of objects.
@@ -147,7 +147,7 @@
 					<br>
 					<hr>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 						<a href="rimg/rimg16_lib.jpg" style="text-decoration:none;">
@@ -168,7 +168,7 @@
 					<p>Since the availability of the next-generation sequencing (NGS) technology, RNA-seq has become popular in biological research in many species for gene discovery, annotation and expression analysis along with the identification of SNP markers across a genome. Compared with the previous DNA microarray technology, it can provide a comprehensive overview of transcriptome with some of the great advantages including higher sensitivity, higher resolution at nucleotide level and no prerequisite of gene sequences.  The advances in high-throughput sequencing with decreasing cost have made it affordable to rapidly generate a large quantity of DNA sequences and genotypic data for investigating a wide range of biological and medical problems.     In the meantime, massive and complex sequence datasets generated from the sequencers create a need for the development of statistical and bio-computational applications to tackle the analysis and data management.
 					</p>
 					<p id="rnahm">Here is a hypothetical example of RNA-Seq dataset from the drought experiment with hybrid maize, i.e. drought stress vs optimal water supply. Samples were sequenced with short reads being mapped onto the maize reference genome and the number of reads mapped to the features of interest (genic regions) were obtained. The gene expression profile for a particular sample consists of the set of gene-wise counts of sequence reads from that sample and one of the experimental objectives is to identify the differentially expressed genes.</p>
-					<p>As the distribution of direct count data is highly skewed, a log2 transformation can approximately normalize the distributions as indicated below:</p>	
+					<p>As the distribution of direct count data is highly skewed, a log2 transformation can approximately normalize the distributions as indicated below:</p>
 					<p>
 					<img src="https://latex.codecogs.com/gif.latex?t&space;=&space;log{_{2}}^{(C&space;&plus;&space;C_{0})}" title="t = log{_{2}}^{(C + C_{0})}" />
 					<br>
@@ -177,7 +177,7 @@
 					<p>The following table lists the top 12 rows of transformed data from the drought experiments:
 					<img src="rimg/rimg10_data.png" alt="datatable" align="middle" width="100%">
 					</p>
-					<p id="rnaMAplot">The data set should be performed with additional manipulations to filter and exclude the genes with non-differential expression. A simple scatter plot can be generated using the script below prior to the differential gene expression analysis. 
+					<p id="rnaMAplot">The data set should be performed with additional manipulations to filter and exclude the genes with non-differential expression. A simple scatter plot can be generated using the script below prior to the differential gene expression analysis.
 					<pre><code>
 					ggplot(data=mydata, aes(x = CAW, y = CAD, color=CBD)) +
 					  geom_point(size=3) +
@@ -186,7 +186,7 @@
 					    plot.title = element_text(color="#0000ff", hjust = 0.5, size=13, face="bold"),
 					    axis.title.x = element_text(color="#003366", size=12, face="bold"),
 					    axis.title.y = element_text(color="#003366", size=12, face="bold"))
-					</code></pre>	
+					</code></pre>
 					</p>
 
 					<p>Then, an MA plot for differential expression analysis can be created to visualize the differences between measurements obtained from two samples or treatments based on the log-intensity ratio (<em>M</em>) and the average log-expression (<em>A</em>).
@@ -204,14 +204,14 @@
 				         axis.title.x = element_text(color="#003366", size=12, face="bold"),
 				         axis.title.y = element_text(color="#003366", size=12, face="bold"))
 					</code></pre>
-					
+
 					<br>
 					To generate a heatmap for clustering gene expression leveles across samples and treatments:
 					<br>
 					<pre><code>
 					library(stats)
 					library(gplots)
-					heatmap.2(as.matrix(mydata), col=redgreen(95), scale="row", key=T, keysize=1.5,density.info="none", 
+					heatmap.2(as.matrix(mydata), col=redgreen(95), scale="row", key=T, keysize=1.5,density.info="none",
 					      trace="none", cexCol=0.9, labRow=NA)
 					</code></pre>
 
@@ -221,8 +221,8 @@
 					</p>
 					<img src="https://latex.codecogs.com/gif.latex?x_{i}^{'}&space;=&space;\frac{x_{i}-min(x)}{max(x)-min(x)}" title="x_{i}^{'} = \frac{x_{i}-min(x)}{max(x)-min(x)}" />
 					<br>
-					where, <img src="https://latex.codecogs.com/gif.latex?x_{i}" title="x_{i}" /> and <img src="https://latex.codecogs.com/gif.latex?x_{i}^{'}" title="x_{i}^{'}" /> are the <img src="https://latex.codecogs.com/gif.latex?i^{th}" title="i^{th}" /> data before and after normalization, respectively. 
-					
+					where, <img src="https://latex.codecogs.com/gif.latex?x_{i}" title="x_{i}" /> and <img src="https://latex.codecogs.com/gif.latex?x_{i}^{'}" title="x_{i}^{'}" /> are the <img src="https://latex.codecogs.com/gif.latex?i^{th}" title="i^{th}" /> data before and after normalization, respectively.
+
 					<br>
 					<p>Thus, a heatmap of similarities can also be created among the participating genotypes based on the expressed genes under different treatment conditions:</p>
 					<pre><code>
@@ -234,14 +234,14 @@
 					</code></pre>
 
 				</article>
-				
+
 				<aside id="sidebar">
 					<br>
 					<div class="purple">
 					<a href="rimg/rimg11_scatterplot.png" style="text-decoration:none;">
 					<img src="rimg/rimg11_scatterplot.png" alt="scatterplot" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">A scatter plot is created using log2 transformed gene expression data from two samples.</font></p>	
+					<p><font color="#ffffff">A scatter plot is created using log2 transformed gene expression data from two samples.</font></p>
 					</a>
 					</div>
 					<br style ="line-height:6;">
@@ -250,7 +250,7 @@
 					<a href="rimg/rimg12_MAplot.png" style="text-decoration:none;">
 					<img src="rimg/rimg12_MAplot.png" alt="MAplot" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">MA plot to visualize differential gene expression between samples or treatments.</font></p>	
+					<p><font color="#ffffff">MA plot to visualize differential gene expression between samples or treatments.</font></p>
 					</a>
 					</div>
 					<br style ="line-height:6;">
@@ -259,7 +259,7 @@
 					<a href="rimg/rimg13_hmgenexp.png" style="text-decoration:none;">
 					<img src="rimg/rimg13_hmgenexp.png" alt="cim" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">A heatmap for clustering gene expression levels across samples and treatments.</font></p>	
+					<p><font color="#ffffff">A heatmap for clustering gene expression levels across samples and treatments.</font></p>
 					</a>
 					</div>
 					<br style ="line-height:6;">
@@ -268,11 +268,11 @@
 					<a href="rimg/rimg14_cim.png" style="text-decoration:none;">
 					<img src="rimg/rimg14_cim.png" alt="cim" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">A heatmap of similarities across the samples and treatments.</font></p>	
+					<p><font color="#ffffff">A heatmap of similarities across the samples and treatments.</font></p>
 					</a>
 					</div>
 				</aside>
-			</div>			
+			</div>
 
 			<div class="container">
 				<article id="main-col">
@@ -289,17 +289,17 @@
 					chordDiagram(mat)
 					</code></pre>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 					<a href="rimg/rimg7.png" style="text-decoration:none;">
 					<img src="rimg/rimg7.png" alt="inbredhybrid" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">The elite inbred and its multiple commercial hybrids.</font></p>	
+					<p><font color="#ffffff">The elite inbred and its multiple commercial hybrids.</font></p>
 					</a>
 					</div>
 				</aside>
-			</div>			
+			</div>
 			<div class="container">
 				<article id="main-col">
 					<h3 id="chorddiagram">Chord diagram: the SNF genic contributions to phenotypes</h3>
@@ -315,18 +315,18 @@
 					chordDiagram(mat)
 					</code></pre>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 					<a href="rimg/rimg6.jpg" style="text-decoration:none;">
 					<img src="rimg/rimg6.jpg" alt="snfchord" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">The chord diagram for the SNF genic contributions.</font></p>	
+					<p><font color="#ffffff">The chord diagram for the SNF genic contributions.</font></p>
 					</a>
 					</div>
 				</aside>
-			</div>			
-			
+			</div>
+
 			<div class="container">
 				<article id="main-col">
 					<h3 id="corrmatrix">Graphical display of a correlation matrix of soybean traits</h1>
@@ -340,13 +340,13 @@
 					corrplot(matrix, method="color", type="upper")
 					</code></pre>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 					<a href="rimg/rimg3.png" style="text-decoration:none;">
 					<img src="rimg/rimg3.png" alt="simple plotting" height="100%" width="100%">
 					<br>
-					<p><font color="#ffffff">A correlation matrix of soybean traits.</font></p>	
+					<p><font color="#ffffff">A correlation matrix of soybean traits.</font></p>
 					</a>
 					</div>
 				</aside>
@@ -362,18 +362,18 @@
 					library(gridExtra)
 					c1a <- ggplot(soydata, aes(x = disRes, y = yield)) +
 								geom_point(aes(size=3, color="red") + geom_smooth(method = "lm", se = TRUE))
-					c1b <- c1a + theme(axis.title.x = element_text(face="bold", size=12)) + labs(x="Disease 
+					c1b <- c1a + theme(axis.title.x = element_text(face="bold", size=12)) + labs(x="Disease
 								Rating") + theme(axis.title.y = element_text(face="bold", size=12)) + labs(y="Yield") + theme(plot.title = element_text(face="bold", size=12)) + labs(title="Yield Response to Root Disease") + theme(panel.grid.major = element_blank(), panel.border = element_blank(), panel.background = element_blank(), axis.line = element_line(size=.4))
 					m1 <- lm(soydata$yield ~ soydata$disRes)
 					a1 <- signif(coef(m1)[1], digits = 2)
 					b1 <- signif(coef(m1)[2], digits = 2)
 					regeq1 <- paste("y = ",b1,"x + ",a1, sep="")
-					regression1 <- c1b + geom_text(aes(x = 6, y = 360, label = regeq1), color="black", size=5, 
+					regression1 <- c1b + geom_text(aes(x = 6, y = 360, label = regeq1), color="black", size=5,
 						parse = FALSE)
 					grid.arrange(r1, r2, nrow=1)
 					</code></pre>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 						<a href="rimg/rimg5.png" style="text-decoration:none;">
@@ -385,7 +385,7 @@
 				</aside>
 			</div>
 		</section>
-			
+
 		<section id="main">
 			<div class="container">
 				<article id="main-col">
@@ -394,12 +394,12 @@
 					library(gclus)
 					trtdata.r <- abs(cor(trtdata))
 					trtdata.col <- dmat.color(trtdata.r)
-					trtdata.o <- order.single(trtdata.r) 
+					trtdata.o <- order.single(trtdata.r)
 					cpairs(trtdata, trtdata.o, panel.colors=trtdata.col, gap=0.3,
 					       main="Scatterplot Matrices for Soybean Traits by Correlation")
 					</code></pre>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 					<a href="rimg/rimg4.png" style="text-decoration:none;">
@@ -427,7 +427,7 @@ plot(x, y, col="#308866") #plot the dependent variable vs the independent variab
 title(main="Simple plotting (B)", col.main="#000080")
 					</code></pre>
 				</article>
-				
+
 				<aside id="sidebar">
 					<div class="purple">
 						<a href="rimg/rimg1.jpg" style="text-decoration:none;">
@@ -440,10 +440,10 @@ title(main="Simple plotting (B)", col.main="#000080")
 		<br><br>
 
 		<footer>
-			<p>Data Sciences, Copyright &copy; 2020 
+			<p>Data Sciences, Copyright &copy; 2020
 			<a href="https://twitter.com/ChunlinHe" target="_blank"><img src="img/tweet_icon.png" width="31" height="31" alt="" /></a>
 			<a href="https://www.linkedin.com/in/chunlinhe888" target="_blank"><img src="img/in_icon.png" width="31" height="31" alt="" /></a>
-			</p>			
+			</p>
 			<p id="time"></p>
 			<script>
 			document.getElementById("time").innerHTML = Date();
@@ -451,4 +451,4 @@ title(main="Simple plotting (B)", col.main="#000080")
 		</footer>
 </body>
 
-</html> 
+</html>
