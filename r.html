@@ -159,7 +159,36 @@
 				</aside>
 			</div>
 		</section>
+
 		<section id="main">
+			<div class="container">
+				<article id="main-col">
+					<br>
+					<h3 id="inbredhybrid">Chord diagram: an elite inbred and its multiple hybrids</h3>
+					<p>Multiple high-yielding commercial hybrids produced from an elite inbred:</p>
+					<pre><code>
+					#corn inbred and yield
+					library(circlize)
+					mydata=read.table("...mydata.csv", sep=",")
+					colnames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
+					rownames(mydata)=c("FIL0a",	"SYT1",	"SYT2",	"SYT3")
+					mat=data.matrix(mydata)
+					chordDiagram(mat)
+					</code></pre>
+				</article>
+
+				<aside id="sidebar">
+					<div class="purple">
+					<a href="rimg/rimg7.png" style="text-decoration:none;">
+					<img src="rimg/rimg7.png" alt="inbredhybrid" height="100%" width="100%">
+					<br>
+					<p><font color="#ffffff">The elite inbred and its multiple commercial hybrids.</font></p>
+					</a>
+					</div>
+				</aside>
+			</div>
+
+
 			<div class="container">
 				<article id="main-col">
 					<br>
@@ -300,6 +329,7 @@
 					</div>
 				</aside>
 			</div>
+
 			<div class="container">
 				<article id="main-col">
 					<h3 id="chorddiagram">Chord diagram: the SNF genic contributions to phenotypes</h3>
