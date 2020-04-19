@@ -182,6 +182,55 @@
 		</section>
 
 		<section id="main">
+
+			<div class="container">
+				<article id="main-col">
+					<hr><br>
+					<h1>Python Applications</h1>
+					<h3 id="static-bubble">Create a bubble chart</h3>
+					<p>A bubble plot is similarly a scatterplot of x- and y-axis with additional third variable or dimension equivalent to a z-axis. The additional third numeric variable is indicated using the size of the bubbles. For example, in order to explore the dynamics of GMO soybean production (Herbicide-tolerant) in 2018, the GMO% of all soybeans planted is plotted for the states that produce most soybeans relative to their GDP where the bubble size is presented as the corresponding population, proportionally. Likewise, bubble charts are also created for the GMO% of all corn planted and the GMO% of all upland cotton planted across the major production States in 2018 that includes cultivars with stacked genes, herbicide-tolerance and insect-resistance/Bt.</p>
+
+					<pre><code>
+ 					import matplotlib.pyplot as plt
+					import numpy
+					x, y, s = numpy.loadtxt('/mydata.csv', delimiter=',', unpack=True, usecols=(3, 4, 5), skiprows=1)
+					GDP, GMO, pop = x, y, s
+					colors = ['#002387', '#043927', '#4C2882', '#48BF91', '#4F42B5', '#800080', '#DA70D6', '#CFB53B', '#D1E231', '#D7837F', '#DF00FF', '#39FF14', '#FE2712', '#FF5800']
+					state = ['AR', 'IL', 'IN', 'IA', 'KS', 'MI', 'MN', 'MS', 'MO', 'NE', 'ND', 'OH', 'SD', 'WI']
+					plt.title('Bubble Chart for GMO% of All Soybeans Planted Across States (Herbicide-tolerant, 2018; bubble size corresponds to population)', color='#006400')
+					plt.xlabel('State GDP (x1000M USD)', color='#006400')
+					plt.ylabel('GMO% of All Soybeans Planted', color='#006400')
+					plt.scatter(x=GDP, y=GMO, s=pop, alpha=0.6, c=colors)
+					for i, txt in enumerate(state):
+					    plt.annotate(txt, (x[i], y[i]), ha='center', va='center')
+					plt.show()
+					</code></pre>
+				</article>
+
+				<aside id="sidebar"><br style ="line-height:6;">
+					<div class="purple">
+					<a href="pimg/pimg16_cottonGMO.png" style="text-decoration:none;">
+					<img src="pimg/pimg16_cottonGMO.png" alt="static-bubble" height="100%" width="100%">
+					<font color="#ffffff">A bubble chart for GMO% of all upland cotton planted across USA in 2018.</font>
+					</a>
+					</div>
+
+					<div class="purple">
+					<a href="pimg/pimg15.png" style="text-decoration:none;">
+					<img src="pimg/pimg15.png" alt="static-bubble" height="100%" width="100%">
+					<font color="#ffffff">A bubble chart for GMO% of all corn planted across USA in 2018.</font>
+					</a>
+					</div>
+
+					<div class="purple">
+					<a href="pimg/pimg14.png" style="text-decoration:none;">
+					<img src="pimg/pimg14.png" alt="static-bubble" height="100%" width="100%">
+					<font color="#ffffff">A bubble chart for GMO% of all soybeans planted across USA in 2018.</font>
+					</a>
+					</div>
+				</aside>
+			</div>
+
 			<div class="container">
 				<article id="main-col">
 					<hr><br>
