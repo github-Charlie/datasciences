@@ -261,7 +261,7 @@
 								<pre><code>
 									SELECT staff_id AS staff, customer_id as customer, sum(amount) OVER (ORDER BY staff_id, customer_id) as total
 									FROM sales
-									WHERE staff_id=2
+									WHERE staff_id=2 AND amount BETWEEN 200 AND 300
 									ORDER BY customer_id;
 								</code></pre><br>
 							<li></li>
