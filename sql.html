@@ -264,9 +264,13 @@
 									WHERE staff_id=2 AND amount BETWEEN 200 AND 300
 									ORDER BY customer_id;
 								</code></pre><br>
-							<li></li>
+							<li>USE INNER JOIN of two tables to get sales with employee or customer information</li>
 								<pre><code>
-
+									SELECT s.name, p.payment sales
+									FROM dbo.staff$ s
+									INNER JOIN dbo.payment$ p
+									ON s.staff_id=p.staff_id
+									ORDER BY name;
 								</code></pre><br>
 							<li></li>
 								<pre><code>
