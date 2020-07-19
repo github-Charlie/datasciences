@@ -198,7 +198,12 @@
 
 					<h3 id="databases">Basic SQL Applications</h3>
 						<ul>
-							<li>UPDATE genelist, SET column1=..., column2=..., WHERE id=...;</li>
+							<li>To select only the DISTINCT values from "State" column in a "Customers" table</li>
+							<pre><code>
+								SELECT DISTINCT State
+								FROM Customers
+								ORDER BY State ASC;
+							</code></pre>
 							<li>DELETE FROM genelist, WHERE id=...;</li>
 							<li>INSERT INTO genelist (column1, column2, ...), VALUES (VALUE1, VALUE2, VALUE3, ...);</li>
 							<li>ALTER TABLE genelist, ADD column_name datatype;</li>
