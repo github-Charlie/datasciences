@@ -272,9 +272,12 @@
 									ON s.staff_id=p.staff_id
 									ORDER BY name;
 								</code></pre><br>
-							<li></li>
+							<li>To JOIN Three Tables</li>
 								<pre><code>
-
+									SELECT o.OrderID, c.CustomerName, s.ShipperName
+									FROM ((Orders o
+									INNER JOIN Customers c ON o.CustomerID = c.CustomerID)
+									INNER JOIN Shippers s ON o.ShipperID = s.ShipperID);
 								</code></pre><br>
 						</ul>
 
