@@ -239,8 +239,22 @@
 								</code></pre>
 							<li>To query records using <i>TOP</i>, <i>LIMIT</i> and <i>ROWNUM</i> on different systems.</li>
 								<pre><code>
-									DELETE FROM Customers
-									WHERE CustomerName='M.G.';
+									-- SQL Server:
+									SELECT TOP 10 *
+									--SELECT TOP 50 PERCENT *
+									FROM Customer
+									WHERE City='DC';
+
+									-- MySQL:
+									SELECT *
+									FROM Customers
+									WHERE City='DC'
+									LIMIT 10;
+
+									-- Oracle:
+									SELECT * FROM Customers
+									-- WHERE ROWNUM <= 10;
+									WHERE City='DC' AND ROWNUM <= 10;
 								</code></pre>
 						</ul>
 
