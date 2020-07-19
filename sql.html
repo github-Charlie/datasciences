@@ -257,9 +257,12 @@
 									-- WHERE ROWNUM <= 10;
 									WHERE City='DC' AND ROWNUM <= 10;
 								</code></pre><br>
-							<li>Use Aggregate Functions for simple statistics: <i>count, min, max, avg, sum, stdev, var</i></li>
+							<li>Use Aggregate Functions for simple statistics: <i>count, min, max, avg, sum, stdev, var.</i></li>
 								<pre><code>
-
+									SELECT staff_id AS staff, customer_id as customer, sum(amount) OVER (ORDER BY staff_id, customer_id) as total
+									FROM sales
+									WHERE staff_id=2
+									ORDER BY customer_id;
 								</code></pre><br>
 							<li></li>
 								<pre><code>
