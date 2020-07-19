@@ -264,7 +264,7 @@
 									WHERE staff_id=2 AND amount BETWEEN 200 AND 300
 									ORDER BY customer_id;
 								</code></pre><br>
-							<li>USE <i>INNER JOIN</i> of two tables to get sales with employee or customer information</li>
+							<li>USE <i>INNER JOIN</i> of two tables to get sales with employee or customer information.</li>
 								<pre><code>
 									SELECT s.name, p.payment sales
 									FROM dbo.staff$ s
@@ -272,7 +272,7 @@
 									ON s.staff_id=p.staff_id
 									ORDER BY name;
 								</code></pre><br>
-							<li>To JOIN Three Tables</li>
+							<li>To JOIN Three Tables.</li>
 								<pre><code>
 									SELECT o.OrderID, c.CustomerName, s.ShipperName
 									FROM ((Orders o
