@@ -208,7 +208,7 @@
 								<pre><code>
 									SELECT COUNT(DISTINCT State)
 									FROM Customers;
-								</code></pre>
+								</code></pre><br>
 							<li>Use <i>WHERE</i> to filter data.</li>
 								<pre><code>
 									SELECT *
@@ -218,18 +218,18 @@
 									-- WHERE NOT city='DC' AND NOT city=' New York';
 									-- WHERE city LIKE 'd%';
 									WHERE city NOT LIKE 'd%';
-								</code></pre>
+								</code></pre><br>
 							<li>Use <i>UPDATE</i> to update records.</li>
 								<pre><code>
 									UPDATE Customers
 									SET ContactName = 'Tom H.', City= 'Dallas'
 									WHERE CustomerID = 10;
-								</code></pre>
+								</code></pre><br>
 							<li>Use <i>DELETE</i> to delete records from table.</li>
 								<pre><code>
 									DELETE FROM Customers
 									WHERE CustomerName='M.G.';
-								</code></pre>
+								</code></pre><br>
 							<li>To select rows using <i>TOP</i> and <i>ORDER</i>.</li>
 								<pre><code>
 									SELECT top 3 State
@@ -237,7 +237,7 @@
 									-- ORDER BY State asc;
 									-- ORDER BY State, CustomerName;
 									ORDER BY State ASC, CustomerName DESC;
-								</code></pre>
+								</code></pre><br>
 							<li>To query records using <i>TOP</i>, <i>LIMIT</i> and <i>ROWNUM</i> on different systems.</li>
 								<pre><code>
 									-- SQL Server:
@@ -256,19 +256,19 @@
 									SELECT * FROM Customers
 									-- WHERE ROWNUM <= 10;
 									WHERE City='DC' AND ROWNUM <= 10;
-								</code></pre>
+								</code></pre><br>
 							<li>Use Aggregate Functions for simple statistics: <i>count, min, max, avg, sum, stdev, var</i></li>
 								<pre><code>
 
-								</code></pre>
+								</code></pre><br>
 							<li></li>
 								<pre><code>
 
-								</code></pre>
+								</code></pre><br>
 							<li></li>
 								<pre><code>
 
-								</code></pre>
+								</code></pre><br>
 						</ul>
 
 				</article>
