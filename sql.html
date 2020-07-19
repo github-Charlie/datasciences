@@ -209,8 +209,16 @@
 									SELECT COUNT(DISTINCT State)
 									FROM Customers;
 								</code></pre>
-							<li></li>
+							<li>Use <i>WHERE</i> to filter data</li>
 								<pre><code>
+									SELECT *
+									FROM Customers
+									-- WHERE city in(‘DC’, ‘New York’);
+									-- WHERE city='DC' OR city=' New York';
+									-- WHERE NOT city='DC' AND NOT city=' New York';
+									WHERE city like 'd%';
+								</code></pre>
+
 							<li></li>
 								<pre><code>
 
