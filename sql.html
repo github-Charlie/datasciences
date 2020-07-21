@@ -334,7 +334,7 @@
 									INNER JOIN Shippers s ON o.ShipperID = s.ShipperID);
 								</code></pre><br>
 
-							<li>LEFT JOIN two tables: it returns all records from the left table (the 1st) and the matched records from the right table (the 2nd).</li>
+							<li><i>LEFT JOIN</i> two tables: it returns all records from the left table (the 1st) and the matched records from the right table (the 2nd).</li>
 								<pre><code>
 									SELECT p.customer_id, s.employee_name, p.payment
 									FROM dbo.payment$ p
@@ -343,12 +343,16 @@
 									order by employee_name;
 								</code></pre><br>
 
-<!--							<li></li>
+							<li><i>RIGHT JOIN</i> two tables: it returns all records from the right table (the 2nd) and the matched records from the left table (the 1st).</li>
 								<pre><code>
-
+									SELECT p.customer_id, s.employee_name, p.payment
+									FROM dbo.payment$ p
+									RIGHT JOIN dbo.staff$ s
+									ON p.staff_id= s.staff_id
+									order by employee_name;
 								</code></pre><br>
 
-							<li></li>
+<!--							<li></li>
 								<pre><code>
 
 								</code></pre><br>
