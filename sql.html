@@ -339,7 +339,7 @@
 									SELECT p.customer_id, s.employee_name, p.payment
 									FROM dbo.payment$ p
 									LEFT JOIN dbo.staff$ s
-									ON p.staff_id= s.staff_id
+									ON p.employee_id= s.employee_id
 									order by employee_name;
 								</code></pre><br>
 
@@ -348,7 +348,7 @@
 									SELECT p.customer_id, s.employee_name, p.payment
 									FROM dbo.payment$ p
 									RIGHT JOIN dbo.staff$ s
-									ON p.staff_id= s.staff_id
+									ON p.employee_id= s.employee_id
 									order by employee_name;
 								</code></pre><br>
 
