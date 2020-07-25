@@ -391,7 +391,6 @@
 									       MIN(OrderAmount) OVER(PARTITION BY City) AS Min,
 									       SUM(Orderamount) OVER(PARTITION BY City) Total
 									FROM [dbo].[Orders];
-
 									<br>
 									/*  (2) More columns are added to the <i>SELECT</i> statement: In this example, the output generates all rows available in the <i>Orders</i> table together with <i>CustomerName</i>, <i>OrderAmount</i> along with the output of the aggregated functions.  */
 									SELECT City, CustomerName, OrderAmount,
