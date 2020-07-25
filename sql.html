@@ -382,7 +382,8 @@
 								</code></pre><br>
 
 							<li><i>GROUP BY</i> vs <i>PARTITION BY</i> functions: II. using PARTITION BY<br></li>
-								However, the above issue associated with <i>GROUP BY</i> can be resolved by using a <i>PARTITION BY</i> clause. For instance, a <i>PARTITION BY</i> clause with the <i>OVER</i> clause can be used to specify the column on which aggregation functions are performed.
+								However, the above issue associated with <i>GROUP BY</i> can be resolved by using a <i>PARTITION BY</i> clause. For instance, a <i>PARTITION BY</i> clause with the <i>OVER</i> clause can be used to specify the column on which aggregation functions are performed.<br>
+								Note that the output from the aggregate functions through PARTITION BY is similar to that from a GROUP By clause, but there is a difference in the output of the PARTITION BY (showing ALL RECORDS in the table: displaying duplicate city name for different orders occurred from the same city) and GROUP BY clause output (showing LIMITED NUMBER OF RECORDS: no duplicated city name).
 								<pre><code>
 
 								</code></pre><br>
