@@ -370,8 +370,8 @@
 									ORDER BY a.City;
 								</code></pre><br>
 
-							<li>Group By vs PARTITION BY functions: I. using Group by<br></li>
-								In GROUP BY clause, we are able to use a column in the select statement with other aggregation functions if the column name is also used in Group by clause, but other columns are not allowed in the select clause if they are not part of GROUP BY clause.
+							<li><i>GROUP By</i> vs <i>PARTITION BY</i> functions: I. using <i>GROUP BY</i><br></li>
+								In <i>GROUP BY</i> clause, we are able to use a column in the select statement with other aggregation functions if the column name is also used in <i>GROUP BY</i> clause, but other columns are not allowed in the <i>SELECT</i> clause if they are not part of <i>GROUP BY</i> clause.
 								<pre><code>
 									SELECT City,
 									       AVG(Orderamount) AS Avg,
