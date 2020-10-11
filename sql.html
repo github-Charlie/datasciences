@@ -267,13 +267,6 @@
 									ON s.staff_id=p.staff_id
 									ORDER BY name;
 								</code></pre><br>
-							<li>To JOIN Three Tables.</li>
-								<pre><code>
-									SELECT o.OrderID, c.CustomerName, s.ShipperName
-									FROM ((Orders o
-									INNER JOIN Customers c ON o.CustomerID = c.CustomerID)
-									INNER JOIN Shippers s ON o.ShipperID = s.ShipperID);
-								</code></pre><br>
 
 							<li><i>LEFT JOIN</i> two tables: it returns all records from the left table (the 1st) and the matched records from the right table (the 2nd).</li>
 								<pre><code>
@@ -309,6 +302,14 @@
 									WHERE a.CustomerID <> b.CustomerID
 									AND a.City = b.City
 									ORDER BY a.City;
+								</code></pre><br>
+
+							<li>To JOIN Three Tables.</li>
+								<pre><code>
+									SELECT o.OrderID, c.CustomerName, s.ShipperName
+									FROM ((Orders o
+									INNER JOIN Customers c ON o.CustomerID = c.CustomerID)
+									INNER JOIN Shippers s ON o.ShipperID = s.ShipperID);
 								</code></pre><br>
 
 							<li>To select only the DISTINCT values from <i>State</i> column in the <i>Customers</i> table.</li>
