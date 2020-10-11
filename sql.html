@@ -259,6 +259,58 @@
 
 					<h3 id="databases">SQL queries from databases</h3>
 						<ul>
+							<li>USE <i>INNER JOIN</i> of two tables to get sales with employee or customer information.</li>
+								<pre><code>
+									SELECT s.name, p.payment sales
+									FROM dbo.staff$ s
+									INNER JOIN dbo.payment$ p
+									ON s.staff_id=p.staff_id
+									ORDER BY name;
+								</code></pre><br>
+							<li>To JOIN Three Tables.</li>
+								<pre><code>
+									SELECT o.OrderID, c.CustomerName, s.ShipperName
+									FROM ((Orders o
+									INNER JOIN Customers c ON o.CustomerID = c.CustomerID)
+									INNER JOIN Shippers s ON o.ShipperID = s.ShipperID);
+								</code></pre><br>
+
+							<li><i>LEFT JOIN</i> two tables: it returns all records from the left table (the 1st) and the matched records from the right table (the 2nd).</li>
+								<pre><code>
+									SELECT p.customer_id, s.employee_name, p.payment
+									FROM dbo.payment$ p
+									LEFT JOIN dbo.staff$ s
+									ON p.employee_id= s.employee_id
+									order by employee_name;
+								</code></pre><br>
+
+							<li><i>RIGHT JOIN</i> two tables: it returns all records from the right table (the 2nd) and the matched records from the left table (the 1st).</li>
+								<pre><code>
+									SELECT p.customer_id, s.employee_name, p.payment
+									FROM dbo.payment$ p
+									RIGHT JOIN dbo.staff$ s
+									ON p.employee_id= s.employee_id
+									order by employee_name;
+								</code></pre><br>
+
+							<li><i>FULL OUTER JOIN</i> or <i>FULL JOIN</i> two tables:  it returns all records when there is a match in left (the 1st) or right (the 2nd) table.</li>
+								<pre><code>
+									SELECT p.customer_id, s.employee_name, p.payment
+									FROM dbo.payment$ p
+									FULL OUTER JOIN dbo.staff$ s
+									ON p.employee_id= s.employee_id
+									order by employee_name;
+								</code></pre><br>
+
+							<li>SQL Self JOIN: a table is joined with itself. The SQL statement below returns the matched customers from the same city through self-joining based on different customer IDs (“<>” is “not equal to”).</li>
+								<pre><code>
+									SELECT a.CustomerName AS Name1, b.CustomerName AS Name2, a.City
+									FROM Customers a, Customers b
+									WHERE a.CustomerID <> b.CustomerID
+									AND a.City = b.City
+									ORDER BY a.City;
+								</code></pre><br>
+
 							<li>To select only the DISTINCT values from <i>State</i> column in the <i>Customers</i> table.</li>
 								<pre><code>
 									SELECT DISTINCT State
@@ -324,57 +376,6 @@
 									FROM sales
 									WHERE staff_id=2 AND amount BETWEEN 200 AND 300
 									ORDER BY customer_id;
-								</code></pre><br>
-							<li>USE <i>INNER JOIN</i> of two tables to get sales with employee or customer information.</li>
-								<pre><code>
-									SELECT s.name, p.payment sales
-									FROM dbo.staff$ s
-									INNER JOIN dbo.payment$ p
-									ON s.staff_id=p.staff_id
-									ORDER BY name;
-								</code></pre><br>
-							<li>To JOIN Three Tables.</li>
-								<pre><code>
-									SELECT o.OrderID, c.CustomerName, s.ShipperName
-									FROM ((Orders o
-									INNER JOIN Customers c ON o.CustomerID = c.CustomerID)
-									INNER JOIN Shippers s ON o.ShipperID = s.ShipperID);
-								</code></pre><br>
-
-							<li><i>LEFT JOIN</i> two tables: it returns all records from the left table (the 1st) and the matched records from the right table (the 2nd).</li>
-								<pre><code>
-									SELECT p.customer_id, s.employee_name, p.payment
-									FROM dbo.payment$ p
-									LEFT JOIN dbo.staff$ s
-									ON p.employee_id= s.employee_id
-									order by employee_name;
-								</code></pre><br>
-
-							<li><i>RIGHT JOIN</i> two tables: it returns all records from the right table (the 2nd) and the matched records from the left table (the 1st).</li>
-								<pre><code>
-									SELECT p.customer_id, s.employee_name, p.payment
-									FROM dbo.payment$ p
-									RIGHT JOIN dbo.staff$ s
-									ON p.employee_id= s.employee_id
-									order by employee_name;
-								</code></pre><br>
-
-							<li><i>FULL OUTER JOIN</i> or <i>FULL JOIN</i> two tables:  it returns all records when there is a match in left (the 1st) or right (the 2nd) table.</li>
-								<pre><code>
-									SELECT p.customer_id, s.employee_name, p.payment
-									FROM dbo.payment$ p
-									FULL OUTER JOIN dbo.staff$ s
-									ON p.employee_id= s.employee_id
-									order by employee_name;
-								</code></pre><br>
-
-							<li>SQL Self JOIN: a table is joined with itself. The SQL statement below returns the matched customers from the same city through self-joining based on different customer IDs (“<>” is “not equal to”).</li>
-								<pre><code>
-									SELECT a.CustomerName AS Name1, b.CustomerName AS Name2, a.City
-									FROM Customers a, Customers b
-									WHERE a.CustomerID <> b.CustomerID
-									AND a.City = b.City
-									ORDER BY a.City;
 								</code></pre><br>
 
 							<li><i>GROUP BY</i> vs <i>PARTITION BY</i> functions: I. using <i>GROUP BY</i><br></li>
