@@ -129,11 +129,13 @@ ul {
 
 /* Header */
 header{
-	background:#181256;
+	background: #181256;
 	color:#ffffff;
 	padding-top:15px;
-	min-height:10px;
+	min-height:1px;
 	border-bottom:#308866 5px solid;
+	background-image:url("../img/iimg99.jpg");
+	background-size: 100% 100%;
 }
 
 header a{
