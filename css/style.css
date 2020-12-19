@@ -132,8 +132,8 @@ header{
 	background: #181256;
 	color:#ffffff;
 	padding-top:15px;
-	min-height:1px;
-	border-bottom:#308866 5px solid;
+	min-height:5px;
+	border-bottom:#308866 3px solid;
 	background-image:url("../img/iimg99.jpg");
 	background-size: 100% 100%;
 }
