@@ -183,7 +183,7 @@ header a:hover{
 
 /* showcase */
 #showcase {
-	min-height:300px;
+	min-height:560px;
 	background-image:url("../img/iimg3.jpg");
 	background-repeat:no-repeat;
     background-size: 100% 100%;
