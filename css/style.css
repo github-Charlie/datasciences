@@ -184,8 +184,13 @@ header a:hover{
 
 /*showcase*/
 #showcase {
+<<<<<<< HEAD
 	min-height:100px;
 	/*background-image:url("../img/iimg3.jpg"); */
+=======
+	min-height:400px;
+	background-image:url("../img/iimg5.jpg");
+>>>>>>> 62311af7df124eeb1c3250c067f7515f91da2336
 	background-repeat:no-repeat;
     background-size: 30% 30%;
 	text-align:center;
