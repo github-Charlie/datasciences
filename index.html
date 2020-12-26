@@ -1,516 +1,552 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="MyWorld of programming from data to solution">
-		<meta name="keywords" content="web design, html, css, javascript, python, R, SQL, big data, hadoop, spark, data science, data analysis, data mining, machine learning, deep learning, artificial intelligence, al">
-		<meta name="author" content="C.H.">
-		<meta name="copyright" content="&copy; 2018 data sciences">
-		<meta name="date" content="2018-01-10" scheme="YYYY-MM-DD">
-		<title>Data Sciences|Home</title>
-		<link rel="stylesheet" href="./css/style.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/mlp7.jpg" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="MyWorld of programming from data to solution">
+        <meta name="keywords" content="web design, html, css, javascript, python, R, SQL, big data, hadoop, spark, data science, data analysis, data mining, machine learning, deep learning, artificial intelligence, al">
+        <meta name="author" content="C.H.">
+        <meta name="copyright" content="&copy; 2018 data sciences">
+        <meta name="date" content="2018-01-10" scheme="YYYY-MM-DD">
+        <title>Data Sciences|Home</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/mlp7.jpg" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116330579-1"></script>
-		<script>
- 		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
- 		gtag('js', new Date());
-		gtag('config', 'UA-116330579-1');
-		</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116330579-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-116330579-1');
+        </script>
  </head>
  <body onload="showDate()">
-		<header>
-			<div class="container">
-				<div id="branding">
-					<a href="index.html">
-					<svg width="230" height="70">
-					   <circle cx="32" cy="10" r="10" fill="#ff00d9"/>
-					   <circle cx="10" cy="32" r="10" fill="#00FF00"/>
-					   <circle cx="32" cy="32" r="10" fill="#00FFFF"/>
-					   <circle cx="54" cy="32" r="10" fill="#ffff00"/>
-					   <circle cx="32" cy="54" r="10" fill="#ff0000"/>
-					   <text x="70" y="40" font-size="20px" font-weight="bold" fill="#00FF00">Chunlin He</text>
-					</svg>
-					</a>
-					<!-- <h1><span class="highlight"><a class="branding" href="index.html">DATA SCIENCES
-					</a></span>
-					</h1> -->
-				</div>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <a href="index.html">
+                    <svg width="230" height="70">
+                       <circle cx="52" cy="10" r="10" fill="#ff00d9"/>
+                       <circle cx="30" cy="32" r="10" fill="#00FF00"/>
+                       <circle cx="52" cy="32" r="10" fill="#00FFFF"/>
+                       <circle cx="74" cy="32" r="10" fill="#ffff00"/>
+                       <circle cx="52" cy="54" r="10" fill="#ff0000"/>
+                       <text x="90" y="40" font-size="20px" font-weight="bold" fill="#00FF00">Chunlin He</text>
+                    </svg>
+                    </a>
+                    <!-- <h1><span class="highlight"><a class="branding" href="index.html">DATA SCIENCES
+                    </a></span>
+                    </h1> -->
+                </div>
 
-				<nav class="navbar">
-					<span class="open-slide">
-						<a href="#" onclick="openSlideMenu()">
-							<svg width="30" height="30">
-								<path d="M0,5,30,5" stroke="#fff"
-								stroke-width="5"/>
-								<path d="M0,14,30,14" stroke="#fff"
-								stroke-width="5"/>
-								<path d="M0,23,30,23" stroke="#fff"
-								stroke-width="5"/>
-							</svg>
-						</a>
-					</span>
-					<ul class="navbar-nav">
-						<li class="current"><a href="index.html">Home</a></li>
-						<li><a href="python.html">Python</a></li>
-						<li><a href="r.html">R</a></li>
-						<li><a href="sql.html">SQL</a></li>
-						<li><a href="javascript.html">JavaScript</a></li>
-						<li><a href="bigdata.html">Bigdata</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-				</nav>
+                <nav class="navbar">
+                    <span class="open-slide">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="30" height="30">
+                                <path d="M0,5,30,5" stroke="#fff"
+                                stroke-width="5"/>
+                                <path d="M0,14,30,14" stroke="#fff"
+                                stroke-width="5"/>
+                                <path d="M0,23,30,23" stroke="#fff"
+                                stroke-width="5"/>
+                            </svg>
+                        </a>
+                    </span>
+                    <ul class="navbar-nav">
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="python.html">Python</a></li>
+                        <li><a href="r.html">R</a></li>
+                        <li><a href="sql.html">SQL</a></li>
+                        <li><a href="javascript.html">JavaScript</a></li>
+                        <li><a href="bigdata.html">Bigdata</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
 
-				<div id="side-menu" class="side-nav">
-					<a href="#" index.html="btn-close" onclick="closeSlideMenu()" align="right">Close &times;</a>
-					<a href="index.html">Home</a>
-					<a href="python.html">Python</a>
-					<a href="r.html">R</a>
-					<a href="sql.html">SQL</a>
-					<a href="javascript.html">JavaScript</a>
-					<a href="bigdata.html">Bigdata</a>
-					<a href="about.html">About</a>
-				</div>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" index.html="btn-close" onclick="closeSlideMenu()" align="right">Close &times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="python.html">Python</a>
+                    <a href="r.html">R</a>
+                    <a href="sql.html">SQL</a>
+                    <a href="javascript.html">JavaScript</a>
+                    <a href="bigdata.html">Bigdata</a>
+                    <a href="about.html">About</a>
+                </div>
 
-				<script>
-					function openSlideMenu(){
-						document.getElementById('side-menu').style.width
-						='150px';
-						document.getElementById('main').style.marginLeft
-						='250px';
-					}
+                <script>
+                    function openSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        ='150px';
+                        document.getElementById('main').style.marginLeft
+                        ='250px';
+                    }
 
-					function closeSlideMenu(){
-						document.getElementById('side-menu').style.width
-						='0';
-						document.getElementById('main').style.marginLeft
-						='0';
-					}
-				</script>
-			</div>
-		</header>
+                    function closeSlideMenu(){
+                        document.getElementById('side-menu').style.width
+                        ='0';
+                        document.getElementById('main').style.marginLeft
+                        ='0';
+                    }
+                </script>
+            </div>
+        </header>
+        </div>
 
-		<section id="showcase">
+        <section id="showcase">
+            <div class="slideshow">
+                <div class="slideshow-item">
+                    <img src="img/iimg1.jpg" alt="">
+                    <div class="slideshow-item-text">
+                        <h5>“Business intelligence arises from data mining and analytics.”</h5>
+                        <p>&mdash; Data scientist</p>
+                    </div>
+                </div>
 
-<!--
-	    <div class="banner1">
-	         <img src="iimg1.jpg">
-	         <div class="text-box text-box1">
-	             <h1>TURN DATA INTO INSIGHTS</h1>
-	             <span></span>
-	             <p> Generate Business Intelligence through Data Mining and Analytics</p>
-	         </div>
-	    </div>
--->
+                <div class="slideshow-item">
+                    <img src="img/iimg2.jpg" alt="">
+                    <div class="slideshow-item-text">
+                        <h5>“DNA is like a computer program but far, far more advanced than any software ever created.”</h5>
+                        <p>&mdash; Bill Gates, BMGF Co-chair & Microsoft Co-founder</p>
+                    </div>
+                </div>
 
-			<div class="container">
-				<h1 align="center">TURN DATA INTO INSIGHTS</h1>
-				<h2 align="center">Generate Business Intelligence through Data Mining and Analytics</h2>
-			</div>
-		</section>
+                <div class="slideshow-item">
+                    <img src="img/iimg3.jpg" alt="">
+                    <div class="slideshow-item-text">
+                        <h5>“Data is going to be so important to human life in the future.”</h5>
+                        <p>&mdash; Jack Ma, Alibaba Founder</p>
+                    </div>
+                </div>
 
-		<section id="boxes">
-			<div class="container">
-				<h1 align="center">What's New?</h1>
+                <div class="slideshow-item">
+                    <img src="img/iimg4.jpg" alt="">
+                    <div class="slideshow-item-text">
+                        <h5>“Data are becoming the new raw material of business.”</h5>
+                        <p>&mdash; Craig Mundie, a senior advisor to the CEO at Microsoft and to President Obama</p>
+                    </div>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="python.html#pimg39" style="text-decoration:none;">
-					<img src="pimg/pimg39.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling covid-19 pandemic in the world.</p>
-					</a>
-				</div>
+                <div class="slideshow-item">
+                    <img src="img/iimg5.jpg" alt="">
+                    <div class="slideshow-item-text">
+                        <h5>“The most valuable commodity I know of is information.”</h5>
+                        <p>&mdash; Gordon Gekko (Michael Douglas), Wall Street (1987)</p>
+                    </div>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="python.html#pimg38" style="text-decoration:none;">
-					<img src="pimg/pimg38.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling covid-19 pandemic in the USA.</p>
-					</a>
-				</div>
+                <div class="slideshow-item">
+                    <img src="img/iimg6.jpg" alt="">
+                    <div class="slideshow-item-text">
+                        <h5>“Information is the oil of the 21st century, and analytic is the combustion engine.”</h5>
+                        <p>&mdash; Peter Sondergaard, SVP at Gartner Research</p>
+                    </div>
+                </div>
 
-				<div class="box", id="new_cases4">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg37.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
+            </div>
 
-				<div class="box", id="cumulativ_cases4">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg36.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
+        </section>
 
-				<div class="box", id="new_cases3">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg35.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
+        <section id="boxes">
+            <div class="container">
+                <h1 align="center">What's New?</h1>
 
-				<div class="box", id="cumulative_cases3">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg34.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg39" style="text-decoration:none;">
+                    <img src="pimg/pimg39.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling covid-19 pandemic in the world.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg38" style="text-decoration:none;">
+                    <img src="pimg/pimg38.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling covid-19 pandemic in the USA.</p>
+                    </a>
+                </div>
+
+                <div class="box", id="new_cases4">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg37.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
+
+                <div class="box", id="cumulativ_cases4">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg36.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
+
+                <div class="box", id="new_cases3">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg35.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
+
+                <div class="box", id="cumulative_cases3">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg34.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 #
-				<div class="box", id="new_cases2">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg31.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
+                <div class="box", id="new_cases2">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg31.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 
-				<div class="box", id="cumulative_cases2">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg30.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
-
-
-				<div class="box", id="new_cases">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg29.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
-
-				<div class="box" id="cumulative_cases">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg28.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
-
-				<div class="box", id="new_cases">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg25.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
-
-				<div class="box" id="cumulative_cases">
-						<video width="100%" height="100%" controls autoplay>
-  						<source src="pimg/pimg24.mp4" type="video/mp4">
-						Sorry, your browser does not support this type of video tag.
-						</video>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#covid19f" style="text-decoration:none;">
-					<img src="pimg/pimg23.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling covid-19 pandemic in WA, CA, IN, NY.</p>
-					</a>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#pimg22" style="text-decoration:none;">
-					<img src="pimg/pimg22.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling coronavirus (covid-19) pandemic in Washington.</p>
-					</a>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#pimg21" style="text-decoration:none;">
-					<img src="pimg/pimg21.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling coronavirus (covid-19) pandemic in California.</p>
-					</a>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#pimg20" style="text-decoration:none;">
-					<img src="pimg/pimg20.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling coronavirus (covid-19) pandemic in New York.</p>
-					</a>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#pimg19" style="text-decoration:none;">
-					<img src="pimg/pimg19.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling coronavirus (ovid-19) pandemic in Indiana.</p>
-					</a>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#pimg18" style="text-decoration:none;">
-					<img src="pimg/pimg18.jpg" alt="Covid-19" height="100%" width="100%">
-					<p>Controlling coronavirus (covid-19) pandemic in Hubei province.</p>
-					</a>
-				</div>
-
-				<div class="box">
-					<br>
-					<a href="python.html#pimg17" style="text-decoration:none;">
-					<img src="pimg/pimg17.jpg" alt="wordcloud" height="100%" width="100%">
-					<p>A word cloud generated through text mining using Python.</p>
-					</a>
-				</div>
+                <div class="box", id="cumulative_cases2">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg30.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 
 
-				<div class="box">
-					<br>
-					<a href="r.html#rimg18" style="text-decoration:none;">
-					<img src="rimg/rimg18.jpg" alt="wordcloud" height="100%" width="100%">
-					<p>Word star through text mining using R.</p>
-					</a>
-				</div>
+                <div class="box", id="new_cases">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg29.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="r.html#rimg17" style="text-decoration:none;">
-					<img src="rimg/rimg17.jpg" alt="wordcloud" height="100%" width="100%">
-					<p>Word clouds through text mining using R.</p>
-					</a>
-				</div>
+                <div class="box" id="cumulative_cases">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg28.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg13" style="text-decoration:none;">
-					<img src="bimg/bimg13.png" alt="ds-subject" height="100%" width="100%">
-					<p>Machine learning: data visualization.</p>
-					</a>
-				</div>
+                <div class="box", id="new_cases">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg25.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg12" style="text-decoration:none;">
-					<img src="bimg/bimg12.gif" alt="ds-subject" height="100%" width="100%">
-					<p>Machine learning: data visualization.</p>
-					</a>
-				</div>
+                <div class="box" id="cumulative_cases">
+                        <video width="100%" height="100%" controls autoplay>
+                        <source src="pimg/pimg24.mp4" type="video/mp4">
+                        Sorry, your browser does not support this type of video tag.
+                        </video>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg11" style="text-decoration:none;">
-					<img src="bimg/bimg11.png" alt="ml" height="100%" width="100%">
-					<p>Machine learning: data visualization.</p>
-					</a>
-				</div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#covid19f" style="text-decoration:none;">
+                    <img src="pimg/pimg23.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling covid-19 pandemic in WA, CA, IN, NY.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg22" style="text-decoration:none;">
+                    <img src="pimg/pimg22.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling coronavirus (covid-19) pandemic in Washington.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg21" style="text-decoration:none;">
+                    <img src="pimg/pimg21.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling coronavirus (covid-19) pandemic in California.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg20" style="text-decoration:none;">
+                    <img src="pimg/pimg20.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling coronavirus (covid-19) pandemic in New York.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg19" style="text-decoration:none;">
+                    <img src="pimg/pimg19.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling coronavirus (ovid-19) pandemic in Indiana.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg18" style="text-decoration:none;">
+                    <img src="pimg/pimg18.jpg" alt="Covid-19" height="100%" width="100%">
+                    <p>Controlling coronavirus (covid-19) pandemic in Hubei province.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg17" style="text-decoration:none;">
+                    <img src="pimg/pimg17.jpg" alt="wordcloud" height="100%" width="100%">
+                    <p>A word cloud generated through text mining using Python.</p>
+                    </a>
+                </div>
+
+
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg18" style="text-decoration:none;">
+                    <img src="rimg/rimg18.jpg" alt="wordcloud" height="100%" width="100%">
+                    <p>Word star through text mining using R.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg17" style="text-decoration:none;">
+                    <img src="rimg/rimg17.jpg" alt="wordcloud" height="100%" width="100%">
+                    <p>Word clouds through text mining using R.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg13" style="text-decoration:none;">
+                    <img src="bimg/bimg13.png" alt="ds-subject" height="100%" width="100%">
+                    <p>Machine learning: data visualization.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg12" style="text-decoration:none;">
+                    <img src="bimg/bimg12.gif" alt="ds-subject" height="100%" width="100%">
+                    <p>Machine learning: data visualization.</p>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg11" style="text-decoration:none;">
+                    <img src="bimg/bimg11.png" alt="ml" height="100%" width="100%">
+                    <p>Machine learning: data visualization.</p>
+                    </a>
+                </div>
 
 
 
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg10" style="text-decoration:none;">
-					<img src="bimg/bimg10.jpg" alt="ds-subject" height="100%" width="100%">
-					<p>Machine learning: predicted vs actual targets.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg9" style="text-decoration:none;">
-					<img src="bimg/bimg9.jpg" alt="ds-subject" height="100%" width="100%">
-					<p>Machine learning: feature selection.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg8" style="text-decoration:none;">
-					<img src="bimg/bimg8.png" alt="ds-subject" height="100%" width="100%">
-					<p>Machine learning: correlation heatmap.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg16" style="text-decoration:none;">
-					<img src="pimg/pimg16_cottonGMO.png" alt="static-bubble" height="100%" width="100%">
-					<p>A bubble chart for GMO% of all upland cotton planted across USA in 2018.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg15" style="text-decoration:none;">
-					<img src="pimg/pimg15.png" alt="static-bubble" height="100%" width="100%">
-					<p>A bubble chart for GMO% of all corn planted across USA in 2018.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg14" style="text-decoration:none;">
-					<img src="pimg/pimg14.png" alt="static-bubble" height="100%" width="100%">
-					<p>A bubble chart for GMO% of all soybeans planted in 2018.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg7" style="text-decoration:none;">
-					<img src="bimg/bimg7_ds.jpg" alt="ds-subject" height="100%" width="100%">
-					<p>The main subjects in Data Sciences.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg13" style="text-decoration:none;">
-					<img src="pimg/pimg13_rnaseq.jpg" alt="rna-seq" height="100%" width="100%">
-					<p>A python scatterplot matrix for maize gene expression.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg6" style="text-decoration:none;">
-					<img src="bimg/bimg6_dib.jpg" alt="dib" height="100%" width="100%">
-					<p>A Venn diagram: Data Science vs IT and Business.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg16" style="text-decoration:none;">
-					<img src="rimg/rimg16_lib.jpg" alt="rlib" height="100%" width="100%">
-					<p>The most popular R libraries in 2018.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg14" style="text-decoration:none;">
-					<img src="rimg/rimg14_cim.png" alt="cim" height="100%" width="100%">
-					<p>RNA-seq analysis: A heatmap of similarities across the samples and treatments.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg13" style="text-decoration:none;">
-					<img src="rimg/rimg13_hmgenexp.png" alt="hmgenexp" height="100%" width="100%">
-					<p>A heatmap for clustering gene expression levels across samples and treatments.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg12" style="text-decoration:none;">
-					<img src="rimg/rimg12_MAplot.png" alt="MAplot" height="100%" width="100%">
-					<p>An MA plot to visualize differential gene expression between samples.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg4" style="text-decoration:none;">
-					<img src="bimg/bimg4_ml.jpg" alt="ml" height="100%" width="100%">
-					<p>Machine learning and its applications.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg12" style="text-decoration:none;">
-					<img src="pimg/pimg12.png" alt="gd" height="100%" width="100%">
-					<p>Visualization of syntenic regions across the genomes of different species/subspecies.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="bigdata.html#bimg3" style="text-decoration:none;">
-					<img src="bimg/bimg3_ds.jpg" alt="ds" height="100%" width="100%">
-					<p>Data sciences are crucial for successful business.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg7" style="text-decoration:none;">
-					<img src="rimg/rimg7.png" alt="inbredhybrid" height="100%" width="100%">
-					<p>Visualization of multiple commercial hybrids produced from an elite inbred.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg6" style="text-decoration:none;">
-					<img src="rimg/rimg6.jpg" alt="snfgenes" height="100%" width="100%">
-					<p>A chord diagram for genic contributions to the phenotypes by the SNF orthologs.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg10a" style="text-decoration:none;">
-					<img src="pimg/pimg10a.png" alt="pythonframework" height="100%" width="100%">
-					<p>The popular python libraries of 2018.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg5" style="text-decoration:none;">
-					<img src="rimg/rimg5.png" alt="regression" height="100%" width="100%">
-					<p>Linear regression in scatterplot charts for the soybean traits from multi-environment trials.</p>
-					</a>
-				</div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg10" style="text-decoration:none;">
+                    <img src="bimg/bimg10.jpg" alt="ds-subject" height="100%" width="100%">
+                    <p>Machine learning: predicted vs actual targets.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg9" style="text-decoration:none;">
+                    <img src="bimg/bimg9.jpg" alt="ds-subject" height="100%" width="100%">
+                    <p>Machine learning: feature selection.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg8" style="text-decoration:none;">
+                    <img src="bimg/bimg8.png" alt="ds-subject" height="100%" width="100%">
+                    <p>Machine learning: correlation heatmap.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg16" style="text-decoration:none;">
+                    <img src="pimg/pimg16_cottonGMO.png" alt="static-bubble" height="100%" width="100%">
+                    <p>A bubble chart for GMO% of all upland cotton planted across USA in 2018.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg15" style="text-decoration:none;">
+                    <img src="pimg/pimg15.png" alt="static-bubble" height="100%" width="100%">
+                    <p>A bubble chart for GMO% of all corn planted across USA in 2018.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg14" style="text-decoration:none;">
+                    <img src="pimg/pimg14.png" alt="static-bubble" height="100%" width="100%">
+                    <p>A bubble chart for GMO% of all soybeans planted in 2018.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg7" style="text-decoration:none;">
+                    <img src="bimg/bimg7_ds.jpg" alt="ds-subject" height="100%" width="100%">
+                    <p>The main subjects in Data Sciences.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg13" style="text-decoration:none;">
+                    <img src="pimg/pimg13_rnaseq.jpg" alt="rna-seq" height="100%" width="100%">
+                    <p>A python scatterplot matrix for maize gene expression.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg6" style="text-decoration:none;">
+                    <img src="bimg/bimg6_dib.jpg" alt="dib" height="100%" width="100%">
+                    <p>A Venn diagram: Data Science vs IT and Business.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg16" style="text-decoration:none;">
+                    <img src="rimg/rimg16_lib.jpg" alt="rlib" height="100%" width="100%">
+                    <p>The most popular R libraries in 2018.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg14" style="text-decoration:none;">
+                    <img src="rimg/rimg14_cim.png" alt="cim" height="100%" width="100%">
+                    <p>RNA-seq analysis: A heatmap of similarities across the samples and treatments.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg13" style="text-decoration:none;">
+                    <img src="rimg/rimg13_hmgenexp.png" alt="hmgenexp" height="100%" width="100%">
+                    <p>A heatmap for clustering gene expression levels across samples and treatments.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg12" style="text-decoration:none;">
+                    <img src="rimg/rimg12_MAplot.png" alt="MAplot" height="100%" width="100%">
+                    <p>An MA plot to visualize differential gene expression between samples.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg4" style="text-decoration:none;">
+                    <img src="bimg/bimg4_ml.jpg" alt="ml" height="100%" width="100%">
+                    <p>Machine learning and its applications.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg12" style="text-decoration:none;">
+                    <img src="pimg/pimg12.png" alt="gd" height="100%" width="100%">
+                    <p>Visualization of syntenic regions across the genomes of different species/subspecies.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="bigdata.html#bimg3" style="text-decoration:none;">
+                    <img src="bimg/bimg3_ds.jpg" alt="ds" height="100%" width="100%">
+                    <p>Data sciences are crucial for successful business.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg7" style="text-decoration:none;">
+                    <img src="rimg/rimg7.png" alt="inbredhybrid" height="100%" width="100%">
+                    <p>Visualization of multiple commercial hybrids produced from an elite inbred.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg6" style="text-decoration:none;">
+                    <img src="rimg/rimg6.jpg" alt="snfgenes" height="100%" width="100%">
+                    <p>A chord diagram for genic contributions to the phenotypes by the SNF orthologs.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg10a" style="text-decoration:none;">
+                    <img src="pimg/pimg10a.png" alt="pythonframework" height="100%" width="100%">
+                    <p>The popular python libraries of 2018.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg5" style="text-decoration:none;">
+                    <img src="rimg/rimg5.png" alt="regression" height="100%" width="100%">
+                    <p>Linear regression in scatterplot charts for the soybean traits from multi-environment trials.</p>
+                    </a>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="python.html#pimg2" style="text-decoration:none;">
-					<img src="pimg/pimg2.jpg" alt="3dscatterplot" height="100%" width="100%">
-					<p>3D scatter plot of crop yield, disease rating and seed quality from variety trials.</p>
-					</a>
-				</div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg2" style="text-decoration:none;">
+                    <img src="pimg/pimg2.jpg" alt="3dscatterplot" height="100%" width="100%">
+                    <p>3D scatter plot of crop yield, disease rating and seed quality from variety trials.</p>
+                    </a>
+                </div>
 
-				<div class="box">
-					<br>
-					<a href="python.html#frameworks" style="text-decoration:none;">
-					<img src="pimg/pimg11.png" alt="pythonframework" height="100%" width="100%">
-					<p>The popular python frameworks of 2017.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg3" style="text-decoration:none;">
-					<img src="rimg/rimg3.png" alt="corrplot" height="100%" width="100%">
-					<p>A correlation matrix of soybean traits from multi-environment trials.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="r.html#rimg4" style="text-decoration:none;">
-					<img src="rimg/rimg4.png" alt="scatterplotmatrices">
-					<p>Scatterplot matrices among crop traits arranged by correlation.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="python.html#pimg1" style="text-decoration:none;">
-					<img src="pimg/pimg1.jpg" alt="Simple 3D Plot" height="100%" width="100%">
-					<p>A 3D plot generated using Python.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="sql.html#databases" style="text-decoration:none;">
-					<img src="simg/simg3.jpg" alt="genelist" height="100%" width="100%">
-					<p>A gene database of the plant species created using SQL.</p>
-					</a>
-				</div>
-				<div class="box">
-					<br>
-					<a href="javascript.html#jimg1-d3cv" style="text-decoration:none;">
-					<img src="jimg/jimg1-d3cv.jpg" alt="d3cv" height="100%" width="100%">
-					<p>Data visualization of crop yield from field trials using D3.js.</p>
-					</a>
-				</div>
-			</div>
-		</section>
+                <div class="box">
+                    <br>
+                    <a href="python.html#frameworks" style="text-decoration:none;">
+                    <img src="pimg/pimg11.png" alt="pythonframework" height="100%" width="100%">
+                    <p>The popular python frameworks of 2017.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg3" style="text-decoration:none;">
+                    <img src="rimg/rimg3.png" alt="corrplot" height="100%" width="100%">
+                    <p>A correlation matrix of soybean traits from multi-environment trials.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="r.html#rimg4" style="text-decoration:none;">
+                    <img src="rimg/rimg4.png" alt="scatterplotmatrices">
+                    <p>Scatterplot matrices among crop traits arranged by correlation.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="python.html#pimg1" style="text-decoration:none;">
+                    <img src="pimg/pimg1.jpg" alt="Simple 3D Plot" height="100%" width="100%">
+                    <p>A 3D plot generated using Python.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="sql.html#databases" style="text-decoration:none;">
+                    <img src="simg/simg3.jpg" alt="genelist" height="100%" width="100%">
+                    <p>A gene database of the plant species created using SQL.</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <br>
+                    <a href="javascript.html#jimg1-d3cv" style="text-decoration:none;">
+                    <img src="jimg/jimg1-d3cv.jpg" alt="d3cv" height="100%" width="100%">
+                    <p>Data visualization of crop yield from field trials using D3.js.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-		<br><br><br><br><br><br>
+        <br><br><br><br><br><br>
 
-		<section>
-			<footer>
-				<p>Data Science, Copyright &copy; 2020,
-				<a href="https://twitter.com/ChunlinHe" target="_blank"><img src="img/tweet_icon.png" width="31" height="31" alt="" /></a>
-				<a href="https://www.linkedin.com/in/chunlinhe888" target="_blank"><img src="img/in_icon.png" width="31" height="31" alt="" /></a>
-				</p>
-				<p id="time"></p>
-				<script>
-				document.getElementById("time").innerHTML = Date();
-				</script>
-			</footer>
-		</section>
+        <section>
+            <footer>
+                <p>Data Science, Copyright &copy; 2020,
+                <a href="https://twitter.com/ChunlinHe" target="_blank"><img src="img/tweet_icon.png" width="31" height="31" alt="" /></a>
+                <a href="https://www.linkedin.com/in/chunlinhe888" target="_blank"><img src="img/in_icon.png" width="31" height="31" alt="" /></a>
+                </p>
+                <p id="time"></p>
+                <script>
+                document.getElementById("time").innerHTML = Date();
+                </script>
+            </footer>
+        </section>
 
 </body>
 </html>
