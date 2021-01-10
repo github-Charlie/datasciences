@@ -348,7 +348,6 @@ header a:hover{
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
-	alignment-baseline: center;
 }
 
 #showcase .container{
@@ -462,6 +461,7 @@ footer {
 	.responsive {
   				width: 100%;
   				height: auto;
+  				align-content: center;
 }
 
 
