@@ -356,11 +356,11 @@ header a:hover{
 
 #boxes .container{
 	margin: auto;
+	alignment-baseline: center;
 }
 
 #main .container{
 	margin: auto;
-	alignment-baseline: center;
 }
 
 #boxes .box{
