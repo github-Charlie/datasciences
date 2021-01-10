@@ -3,7 +3,6 @@ body{
 	padding:0;
 	margin:2%;
 	background-color:#f4f4f4;
-	align-content: center;
 }
 
 .navbar{
@@ -92,6 +91,7 @@ body{
 
 div.container {
   text-align: left;
+  align-content: center;
 }
 
 .line{
