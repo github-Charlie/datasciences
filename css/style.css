@@ -360,7 +360,7 @@ header a:hover{
 
 #main .container{
 	margin: auto;
-	align-self: center;
+	alignment-baseline: center;
 }
 
 #boxes .box{
