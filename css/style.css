@@ -87,7 +87,6 @@ body{
 	height:100%;
 	align-content: center;
 	overflow:hidden;
-	align-items: center;
 }
 
 div.container {
@@ -357,6 +356,7 @@ header a:hover{
 
 #boxes .container{
 	margin: auto;
+	align-self: center;
 }
 
 #main .container{
