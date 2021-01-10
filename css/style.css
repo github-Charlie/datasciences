@@ -357,7 +357,7 @@ header a:hover{
 	margin: auto;
 }
 
-#container boxes{
+.container {
 	align-content: center;
 }
 
