@@ -325,10 +325,6 @@ header a:hover{
 
 /* end insert here */
 
-#boxes box{
-	align-content: center;
-}
-
 /*
 #showcase h1{
 	margin-top:60px;
@@ -359,6 +355,10 @@ header a:hover{
 
 #boxes .container{
 	margin: auto;
+}
+
+#container boxes{
+	align-content: center;
 }
 
 #main .container{
