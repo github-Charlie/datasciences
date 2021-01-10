@@ -348,6 +348,7 @@ header a:hover{
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
+	alignment-baseline: center;
 }
 
 #showcase .container{
@@ -356,7 +357,6 @@ header a:hover{
 
 #boxes .container{
 	margin: auto;
-	alignment-baseline: center;
 }
 
 #main .container{
