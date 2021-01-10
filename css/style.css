@@ -3,6 +3,7 @@ body{
 	padding:0;
 	margin:2%;
 	background-color:#f4f4f4;
+	align-content: center;
 }
 
 .navbar{
@@ -475,7 +476,6 @@ footer {
 		  margin-left: auto;
 		  margin-right: auto;
 		  width: 40%;
-		  align-content: center;
 	}
 }
 
