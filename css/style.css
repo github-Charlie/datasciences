@@ -90,8 +90,7 @@ body{
 }
 
 div.container {
-  /*text-align: left;*/
-  align-content: center;
+  text-align: left;
 }
 
 .line{
@@ -149,6 +148,7 @@ header a{
 header .container{
 	text-align: center;
 	margin: auto;
+	align-content: center;
 }
 
 header li{
