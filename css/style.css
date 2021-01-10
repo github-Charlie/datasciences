@@ -370,6 +370,7 @@ header a:hover{
 	padding:5px;
 	border:10px solid #B0E0E6;
 	background-color:#FFFFFF;
+	align-content: center;
 }
 
 /* img size: w-230px=>250px, h-150px=>170px */
