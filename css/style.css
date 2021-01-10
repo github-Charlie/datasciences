@@ -461,7 +461,6 @@ footer {
 	.responsive {
   				width: 100%;
   				height: auto;
-  				align-content: center;
 }
 
 
@@ -476,6 +475,7 @@ footer {
 		  margin-left: auto;
 		  margin-right: auto;
 		  width: 40%;
+		  align-content: center;
 	}
 }
 
