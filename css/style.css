@@ -358,7 +358,7 @@ header a:hover{
 }
 
 .boxes {
-	align-self: center;
+	align-items: center;
 }
 
 #main .container{
