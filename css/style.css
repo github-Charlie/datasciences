@@ -91,6 +91,7 @@ body{
 
 div.container {
   text-align: left;
+  justify-content: center;
 }
 
 .line{
@@ -355,10 +356,6 @@ header a:hover{
 
 #boxes .container{
 	margin: auto;
-}
-
-.container {
-	align-self: center;
 }
 
 #main .container{
