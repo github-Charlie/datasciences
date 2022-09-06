@@ -2,7 +2,8 @@
 body{
 	font: 15px/1.5 Arial, Helvetica, san-serif;
 	padding:0;
-	margin:2%;
+	/*margin:2%;*/
+	margin:auto;
 	background-color:#f4f4f4;
 }
 
