@@ -366,12 +366,17 @@ header a:hover{
 */
 
 /* Boxes */
-#boxes{
+#boxes {
 	margin-top:50px;
 	margin-left:auto;
 	margin-right:auto;
 	align-items: center;
 	height: auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 #showcase .container{
