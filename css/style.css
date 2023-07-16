@@ -1,16 +1,10 @@
 
 body {
-	/*
 	font: 15px/1.5 Arial, Helvetica, san-serif;
 	padding:0;
-	margin: 3%;*/
+	margin: 2%;
 	/*margin:auto; */
-	/*background-color:#f4f4f4;*/
-
-	/*display: flex;*/
-	*justify-content: center;
-	/*align-items: center;*/
-	/*min-height: 100vh;*/
+	background-color:#f4f4f4;
 }
 
 .center {
@@ -20,8 +14,11 @@ body {
   }
 
 section {
-	margin: auto;
+	/*margin: auto;*/
+	display: flex;
+	justify-content: center;
 	align-content: center;
+	align-items: center;
 }
 
 .navbar{
@@ -373,8 +370,8 @@ header a:hover{
 	align-items: center;
 	height: auto;*/
 
-	display: flex;
-	flex-wrap: wrap;
+	/*display: flex;
+	flex-wrap: wrap;*/
 	justify-content: center;
 	align-items: center;
 }
