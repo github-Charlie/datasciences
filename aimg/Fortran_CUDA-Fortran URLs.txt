@@ -1,0 +1,6 @@
+Fortran_CUDA-Fortran URLs
+https://developer.nvidia.com/blog/easy-introduction-cuda-fortran/
+https://developer.nvidia.com/cuda-fortran
+https://docs.nvidia.com/hpc-sdk/pdf/hpc245cudaforug.pdf
+CUDA Fortran Programming:
+https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/
