@@ -43,10 +43,8 @@ section {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 0 15px;
-	box-sizing: border-box;
 }
 
 .navbar a {
@@ -76,24 +74,24 @@ section {
 } */
 
 .side-nav {
-	height: 100%;
+	height: 60%;
 	width: 0;
 	position: fixed;
-	z-index: 1000;
+	z-index: 1;
 	top: 0;
-	left: 0;
+	left: 5;
 	background-color: #111;
-	opacity: 0.9;
+	opacity: 0.8;
 	overflow-x: hidden;
-	padding-top: 60px;
+	padding-top: 40px;
 	transition: 0.5s;
 	text-align: left;
 }
 
 .side-nav a {
-	padding: 15px 25px;
+	padding: 10px 10px 10px 30px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 15px;
 	color: #FFFFFF;
 	display: block;
 	transition: 0.3s;
@@ -424,6 +422,10 @@ h1 {
     margin-top: 0.67em;
 }
 
+.page-title {
+    margin-top: 0 !important;
+}
+
 /* Sidebar */
 aside#sidebar{
 	float:right;
@@ -550,7 +552,7 @@ footer {
 }
 
 .navbar-nav li {
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 .navbar-nav a {
@@ -558,66 +560,40 @@ footer {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar-nav a:hover {
     color: #00FF00;
+    font-size: 20px;  /* Ensure consistent font size on hover */
 }
 
 header .current a {
     color: #00FF00;
     font-weight: 700;
+    font-size: 20px;  /* Ensure consistent font size for current page */
 }
 
-/* Navigation Styles */
-.open-slide {
-    display: none;
+/* Override any conflicting header styles */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-@media(max-width: 768px) {
-    .open-slide {
-        display: block;
-    }
-    
-    .navbar-nav {
-        display: none;
-    }
-    
-    .side-nav {
-        width: 0;
-    }
-    
-    header .container {
-        padding: 0 10px;
-    }
-    
-    #branding {
-        margin-right: auto;
-    }
-    
-    .navbar {
-        justify-content: flex-start;
-    }
-    
-    .side-nav a {
-        padding: 15px 25px;
-        font-size: 18px;
-    }
+header a:hover {
+    color: #00FF00;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-@media(min-width: 769px) {
-    .side-nav {
-        width: 0 !important;
-    }
-    
-    .open-slide {
-        display: none;
-    }
-    
-    .navbar-nav {
-        display: flex;
-    }
+header .highlight, header .current a {
+    color: #00FF00;
+    font-weight: 700;
+    font-size: 20px;
 }
